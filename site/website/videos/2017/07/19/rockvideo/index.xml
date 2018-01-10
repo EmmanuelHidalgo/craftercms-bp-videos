@@ -17,9 +17,13 @@
 	<value>rock</value>
 	<include>/site/website/categories/music/rock/index.xml</include>
 	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
 	</item></categories>
 	<createdDate>2018-01-10T17:21:36.047Z</createdDate>
 	<createdDate_dt>2018-01-10T17:21:36.047Z</createdDate_dt>
-	<lastModifiedDate>2018-01-10T17:21:36.047Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-10T17:21:36.047Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-10T17:40:58.289Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:40:58.289Z</lastModifiedDate_dt>
 </page>

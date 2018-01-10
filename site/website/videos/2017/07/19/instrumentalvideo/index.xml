@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>77a1</objectGroupId>
+	<objectId>77a14a6d-2878-6347-18b0-c2c26dccd1b3</objectId>
+	<internal-name>instrumentalvideo</internal-name>
+	<title>instrumentalvideo</title>
+	<tags>instrumentalvideo</tags>
+	<file-name>index.xml</file-name>
+	<folder-name>instrumentalvideo</folder-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>instrumentalvideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/instrumental/index.xml</key>
+	<value>instrumental</value>
+	<include>/site/website/categories/music/instrumental/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T17:38:19.960Z</createdDate>
+	<createdDate_dt>2018-01-10T17:38:19.960Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T17:40:29.162Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:40:29.162Z</lastModifiedDate_dt>
+</page>

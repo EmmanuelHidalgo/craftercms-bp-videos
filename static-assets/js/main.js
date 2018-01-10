@@ -1,30 +1,10 @@
 function parseData(data) {
-    const obj = {
-        core: {
-            themes: {
-                variant: false,
-                stripes: false,
-                responsive: true,
-                dots: false,
-            },
-            check_callback:true,
-            expand_selected_onload: true,
-            loaded_state: true,
-            state: {
-                key: "container",
-                preserve_loaded: true,
-                events: ['changed.jstree','open_node.jstree', 'close_node.jstree']
-                },
-            plugins: ['state', 'contextmenu'],
-            data: []
-        }
-    };
-
+	const dataArr = [];
     data.item.children.forEach((child) => {
         const nodes = child.children ? child.children : [];
         if (child.name !== 'index.xml') {
 
-        obj.core.data.push({
+        dataArr.push({
             id: child.name,
             text: child.name,
             url: child.url,
@@ -32,8 +12,8 @@ function parseData(data) {
         })
       }
     })
-
-    return obj;
+	
+   return dataArr;
 }
 
 function generateChildren(parentChildren) {
@@ -93,14 +73,25 @@ function generateChildren(parentChildren) {
                 "url": api,
               }).done(function (data) {
                 if(data.item) {
-                  $('#jstree').jstree(parseData(data));
-                  $('#jstree').on("changed.jstree", function (e, data) {
-                  	console.log(data.node.original.url)
-                    const url = data.node.original.url
-                    const formatedUrl = url.split('/').splice(3,url.length).join('/')
-                    window.location = '/'+formatedUrl;
+                	//here is the configuration of the jstree library
+                  $('#jstree').jstree({
+                  	core: {
+                    	data:parseData(data),
+                        themes: {
+                        	responsive: true,
+                        	dots: false
+                        }
+                    },
+                    state:{key: 'jstree'},
+                    plugins:['state', 'unique']
                   });
-                  console.log($('#jstree').jstree("get_selected", true));
+                  $('#jstree').on("changed.jstree", function (e, data) {
+                  	if (data && data.node) {
+                    	const url = data.node.original.url
+                        const formatedUrl = url.split('/').splice(3,url.length).join('/')
+                        window.location = '/'+formatedUrl;
+                    }  
+                  });
                 }
               }).fail(function (error) {
                 console.error(error);

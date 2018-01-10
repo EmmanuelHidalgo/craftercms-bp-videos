@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>cbeb</objectGroupId>
+	<objectId>cbeb3bdc-dada-6ef1-6b37-554314299ec4</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>macvideo</folder-name>
+	<internal-name>macvideo</internal-name>
+	<title>macvideo</title>
+	<tags/>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>macvideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/technology/computers/laptop/mac/index.xml</key>
+	<value>mac</value>
+	<include>/site/website/categories/technology/computers/laptop/mac/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T18:18:09.091Z</createdDate>
+	<createdDate_dt>2018-01-10T18:18:09.091Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T18:18:09.091Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T18:18:09.091Z</lastModifiedDate_dt>
+</page>

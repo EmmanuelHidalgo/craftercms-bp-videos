@@ -17,9 +17,17 @@
 	<value>metal</value>
 	<include>/site/website/categories/music/rock/metal/index.xml</include>
 	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rock/index.xml</key>
+	<value>rock</value>
+	<include>/site/website/categories/music/rock/index.xml</include>
+	<disableFlattening>false</disableFlattening>
 	</item></categories>
 	<createdDate>2018-01-10T17:23:00.729Z</createdDate>
 	<createdDate_dt>2018-01-10T17:23:00.729Z</createdDate_dt>
-	<lastModifiedDate>2018-01-10T17:24:11.890Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-10T17:24:11.890Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-10T17:42:20.091Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:42:20.091Z</lastModifiedDate_dt>
 </page>
