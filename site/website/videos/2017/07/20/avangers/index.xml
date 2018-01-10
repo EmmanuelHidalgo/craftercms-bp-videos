@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>8ce4</objectGroupId>
+	<objectId>8ce4a18d-28fb-224e-3d2d-9182d15077ba</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>avangers</folder-name>
+	<internal-name>avengers</internal-name>
+	<title>Avengers</title>
+	<tags>movies</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>avengers</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/movies/index.xml</key>
+	<value>movies</value>
+	<include>/site/website/categories/movies/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/action/index.xml</key>
+	<value>action</value>
+	<include>/site/website/categories/movies/action/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/action/superheroes/index.xml</key>
+	<value>superheroes</value>
+	<include>/site/website/categories/movies/action/superheroes/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T23:32:52.004Z</createdDate>
+	<createdDate_dt>2018-01-10T23:32:52.004Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T23:32:52.004Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T23:32:52.004Z</lastModifiedDate_dt>
+</page>

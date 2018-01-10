@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>69af</objectGroupId>
+	<objectId>69af2623-d54b-1ec2-1331-3d3a585bf32d</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>movies</folder-name>
+	<internal-name>movies</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-10T23:30:50.763Z</createdDate>
+	<createdDate_dt>2018-01-10T23:30:50.763Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T23:30:50.763Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T23:30:50.763Z</lastModifiedDate_dt>
+</page>

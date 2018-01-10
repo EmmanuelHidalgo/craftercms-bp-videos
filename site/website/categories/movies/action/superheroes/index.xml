@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>1df6</objectGroupId>
+	<objectId>1df6996a-cc1b-c631-be48-b0a425a9d190</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>superheroes</folder-name>
+	<internal-name>superheroes</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-10T23:32:21.581Z</createdDate>
+	<createdDate_dt>2018-01-10T23:32:21.581Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T23:32:21.581Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T23:32:21.581Z</lastModifiedDate_dt>
+</page>
