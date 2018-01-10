@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>c425</objectGroupId>
+	<objectId>c42560ad-4c8c-b5c3-f453-9c667c3a9ac8</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>medicine</folder-name>
+	<internal-name>Medicine</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2017-8-4T16:38:56.000Z</createdDate>
+	<createdDate_dt>2017-8-4T16:38:56.000Z</createdDate_dt>
+	<lastModifiedDate>2017-8-4T16:39:11.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-8-4T16:39:11.000Z</lastModifiedDate_dt>
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-contact</content-type>	<display-template>/templates/web/pages/contact-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5852</objectGroupId>
+	<objectId>5852a29f-209f-41db-4281-50843b5c11c5</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>contact</folder-name>
+	<internal-name>contact </internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2017-12-29T17:39:44.000Z</createdDate>
+	<createdDate_dt>2017-12-29T17:39:44.000Z</createdDate_dt>
+	<lastModifiedDate>2017-12-29T20:31:12.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-12-29T20:31:12.000Z</lastModifiedDate_dt>
+	<contactFormTitle>Contact Us</contactFormTitle>
+	<locationTitle>Locate us </locationTitle>
+	<informationTitle>Company Info</informationTitle>
+	<buttonSubmitTitle>Send</buttonSubmitTitle>
+	<contactNameLabel>Name</contactNameLabel>
+	<contactEmailLabel>Email</contactEmailLabel>
+	<contactMobileLabel>Mobile</contactMobileLabel>
+	<contactSubjectLabel>Subject</contactSubjectLabel>
+	<companyMainAddress>Los Angeles</companyMainAddress>
+	<companySecondAddress>str test, addriss test</companySecondAddress>
+	<companyPhone>8888888</companyPhone>
+	<companyFax>9999999</companyFax>
+	<companyEmail>test@test.com</companyEmail>
+</page>

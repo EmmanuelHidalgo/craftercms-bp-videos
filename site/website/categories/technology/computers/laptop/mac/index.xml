@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4201</objectGroupId>
+	<objectId>4201b749-6816-41bc-43d6-34965547159f</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>mac</folder-name>
+	<internal-name>mac</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T17:10:17.344Z</createdDate>
+	<createdDate_dt>2018-01-08T17:10:17.344Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T17:10:17.344Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T17:10:17.344Z</lastModifiedDate_dt>
+</page>

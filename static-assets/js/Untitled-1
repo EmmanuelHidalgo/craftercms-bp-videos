@@ -1,0 +1,18 @@
+http://localhost:8080/studio/api/1/services/api/1/content/get-items-tree.json?site=videov3&path=/site/website/categories/index.xml&depth=100
+
+
+
+ $.get(api)
+          .done(function( data ) {
+            if(data.item) {
+            	console.log('my data', data)
+                  data.item.children.forEach((category) => {
+                    var li = document.createElement('li');
+                    li.innerHTML = `<li><a href=${category.browserUri} style="text-transform: capitalize">${category.internalName}</a></li>`;
+                    $("#categoriesContainer").append(li);
+            })
+            }
+          })
+          .fail((error) => {
+          	console.log(error)
+          });

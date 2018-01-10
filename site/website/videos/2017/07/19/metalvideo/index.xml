@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e63c</objectGroupId>
+	<objectId>e63c8bb5-b420-4951-33dd-44d75dce4062</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>metalvideo</folder-name>
+	<internal-name>metalvideo</internal-name>
+	<title>metalvideo</title>
+	<tags>metalvideo</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>metalvideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/rock/metal/index.xml</key>
+	<value>metal</value>
+	<include>/site/website/categories/music/rock/metal/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T17:23:00.729Z</createdDate>
+	<createdDate_dt>2018-01-10T17:23:00.729Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T17:24:11.890Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:24:11.890Z</lastModifiedDate_dt>
+</page>

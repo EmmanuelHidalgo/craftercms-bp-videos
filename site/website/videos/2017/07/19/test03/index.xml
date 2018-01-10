@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9609</objectGroupId>
+	<objectId>960908d2-73d2-d99c-11f8-d4ae27f16779</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test03</folder-name>
+	<internal-name>test03</internal-name>
+	<title>test03</title>
+	<tags>test03</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>test03</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/test/index.xml</key>
+	<value>test</value>
+	<include>/site/website/categories/test/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T17:06:45.505Z</createdDate>
+	<createdDate_dt>2018-01-10T17:06:45.505Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T17:20:32.022Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:20:32.022Z</lastModifiedDate_dt>
+</page>

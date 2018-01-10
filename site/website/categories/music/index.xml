@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5e8f</objectGroupId>
+	<objectId>5e8f33e9-51eb-82bc-dad3-898ec526114a</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>music</folder-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>4000</orderDefault_f>
+	<internal-name>music</internal-name>
+	<createdDate>2018-1-2T21:45:28.000Z</createdDate>
+	<createdDate_dt>2018-1-2T21:45:28.000Z</createdDate_dt>
+	<lastModifiedDate>2018-1-3T17:36:37.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-1-3T17:36:37.000Z</lastModifiedDate_dt>
+</page>

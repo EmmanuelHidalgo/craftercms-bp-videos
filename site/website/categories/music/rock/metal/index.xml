@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5938</objectGroupId>
+	<objectId>5938a26a-cc3f-917e-0502-35c6a24ea0f5</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>metal</folder-name>
+	<internal-name>metal</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T15:33:30.788Z</createdDate>
+	<createdDate_dt>2018-01-08T15:33:30.788Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T15:33:30.788Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T15:33:30.788Z</lastModifiedDate_dt>
+</page>

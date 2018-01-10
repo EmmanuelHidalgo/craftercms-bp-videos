@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>6edf</objectGroupId>
+	<objectId>6edfa8b1-063f-970e-fe80-1502b3f13078</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>earth</folder-name>
+	<internal-name>earth</internal-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>0</orderDefault_f>
+	<createdDate>2018-01-08T15:24:59.933Z</createdDate>
+	<createdDate_dt>2018-01-08T15:24:59.933Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T15:24:59.933Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T15:24:59.933Z</lastModifiedDate_dt>
+</page>

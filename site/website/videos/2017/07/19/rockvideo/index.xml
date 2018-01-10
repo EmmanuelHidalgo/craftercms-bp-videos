@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>97e3</objectGroupId>
+	<objectId>97e37322-e17d-d4a7-3390-8bafb1522797</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>rockvideo</folder-name>
+	<internal-name>rockVideo</internal-name>
+	<title>rockVideo</title>
+	<tags>rockVideo</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>rockVideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/rock/index.xml</key>
+	<value>rock</value>
+	<include>/site/website/categories/music/rock/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T17:21:36.047Z</createdDate>
+	<createdDate_dt>2018-01-10T17:21:36.047Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T17:21:36.047Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:21:36.047Z</lastModifiedDate_dt>
+</page>

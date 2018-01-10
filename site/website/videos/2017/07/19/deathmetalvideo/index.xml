@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ecef</objectGroupId>
+	<objectId>ecef1fff-d712-f07a-ca3a-9ce9e405fed2</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>deathmetalvideo</folder-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<internal-name>deathmetalvideo</internal-name>
+	<title>deathmetalvideo</title>
+	<tags>deathmetalvideo</tags>
+	<description>deathmetalvideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/rock/metal/deathmetal/index.xml</key>
+	<value>deathmetal</value>
+	<include>/site/website/categories/music/rock/metal/deathmetal/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rock/metal/index.xml</key>
+	<value>metal</value>
+	<include>/site/website/categories/music/rock/metal/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-10T17:25:04.253Z</createdDate>
+	<createdDate_dt>2018-01-10T17:25:04.253Z</createdDate_dt>
+	<lastModifiedDate>2018-01-10T17:26:12.809Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-10T17:26:12.809Z</lastModifiedDate_dt>
+</page>

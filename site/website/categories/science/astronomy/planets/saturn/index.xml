@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>f499</objectGroupId>
+	<objectId>f49996c4-c80d-75a5-a54d-cf7ba0a21f85</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>saturn</folder-name>
+	<internal-name>saturn</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T15:54:53.997Z</createdDate>
+	<createdDate_dt>2018-01-08T15:54:53.997Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T15:54:53.997Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T15:54:53.997Z</lastModifiedDate_dt>
+</page>

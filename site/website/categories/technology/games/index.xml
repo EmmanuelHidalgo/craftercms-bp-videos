@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>032a</objectGroupId>
+	<objectId>032a077c-4829-55de-6aa5-bb74398f462c</objectId>
+	<internal-name>games</internal-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>0</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>games</folder-name>
+	<createdDate>2018-01-04T18:32:09.910Z</createdDate>
+	<createdDate_dt>2018-01-04T18:32:09.910Z</createdDate_dt>
+	<lastModifiedDate>2018-01-04T18:32:09.910Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-04T18:32:09.910Z</lastModifiedDate_dt>
+</page>

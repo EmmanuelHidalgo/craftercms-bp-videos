@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/component-header</content-type>	<display-template>/templates/web/components/header-component.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ab32</objectGroupId>
+	<objectId>ab320cda-e685-987e-1584-c9d0be406c39</objectId>
+	<file-name>default-header.xml</file-name>
+	<folder-name/>
+	<internal-name>Default Header</internal-name>
+	<createdDate>2017-7-17T20:18:53.000Z</createdDate>
+	<createdDate_dt>2017-7-17T20:18:53.000Z</createdDate_dt>
+	<lastModifiedDate>2017-7-17T20:38:43.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-7-17T20:38:43.000Z</lastModifiedDate_dt>
+	<headerImageUrl>/</headerImageUrl>
+	<headerImage>/static-assets/images/logo.png</headerImage>
+</component>

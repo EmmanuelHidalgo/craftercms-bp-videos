@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/component-footer</content-type>	<display-template>/templates/web/components/footer-component.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>b054</objectGroupId>
+	<objectId>b0548ef1-b680-e004-58a5-9abf66bc7910</objectId>
+	<internal-name>Default Footer</internal-name>
+	<file-name>default-footer.xml</file-name>
+	<folder-name/>
+	<createdDate>2017-7-17T20:19:30.000Z</createdDate>
+	<createdDate_dt>2017-7-17T20:19:30.000Z</createdDate_dt>
+	<lastModifiedDate>2017-7-17T20:19:30.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-7-17T20:19:30.000Z</lastModifiedDate_dt>
+</component>

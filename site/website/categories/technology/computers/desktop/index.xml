@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>cf23</objectGroupId>
+	<objectId>cf238b84-40da-ae4c-15c7-62665576f28e</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>desktop</folder-name>
+	<internal-name>desktop</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T16:49:50.523Z</createdDate>
+	<createdDate_dt>2018-01-08T16:49:50.523Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T16:49:50.523Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T16:49:50.523Z</lastModifiedDate_dt>
+</page>

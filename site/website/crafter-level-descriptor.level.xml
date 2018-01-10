@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/level-descriptor</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>395b</objectGroupId>
+	<objectId>395ba5c5-5281-01bc-c488-acaf29d47219</objectId>
+	<file-name>crafter-level-descriptor.level.xml</file-name>
+	<folder-name/>
+	<createdDate>2017-7-17T19:50:55.000Z</createdDate>
+	<createdDate_dt>2017-7-17T19:50:55.000Z</createdDate_dt>
+	<lastModifiedDate>2017-7-17T19:50:55.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-7-17T19:50:55.000Z</lastModifiedDate_dt>
+	<defaultHeader>	<item>	<key>/site/components/common/default-header.xml</key>
+	<value>Default Header</value>
+	<include>/site/components/common/default-header.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></defaultHeader>
+	<defaultFooter>	<item>	<key>/site/components/common/default-footer.xml</key>
+	<value>Default Footer</value>
+	<include>/site/components/common/default-footer.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></defaultFooter>
+	<recentVideosLabel>Recent Videos</recentVideosLabel>
+	<mostViewVideosLabel>Most View Videos</mostViewVideosLabel>
+	<contactEmails>	<item>	<email>emmanuel.hidalgo@rivetlogic.com</email>
+	</item>	<item>	<email>emmanuel_1693@hotmail.es</email>
+	</item></contactEmails>
+</component>

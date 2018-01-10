@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9dd4</objectGroupId>
+	<objectId>9dd4ecab-8924-1c45-f458-c5939e04f8f3</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>phones</folder-name>
+	<internal-name>phones</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T16:48:49.247Z</createdDate>
+	<createdDate_dt>2018-01-08T16:48:49.247Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T16:48:49.247Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T16:48:49.247Z</lastModifiedDate_dt>
+</page>

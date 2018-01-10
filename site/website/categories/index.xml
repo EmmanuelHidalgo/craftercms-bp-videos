@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5166</objectGroupId>
+	<objectId>51662473-e5fe-71c2-eb89-52c0240b7de5</objectId>
+	<internal-name>Categories</internal-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>2000</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>categories</folder-name>
+	<createdDate>2017-7-18T20:44:29.000Z</createdDate>
+	<createdDate_dt>2017-7-18T20:44:29.000Z</createdDate_dt>
+	<lastModifiedDate>2017-7-19T20:16:59.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-7-19T20:16:59.000Z</lastModifiedDate_dt>
+</page>

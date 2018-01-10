@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>892f</objectGroupId>
+	<objectId>892f142b-d8cf-d541-d774-20e0fb3df998</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>deathmetal</folder-name>
+	<internal-name>deathmetal</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-08T15:34:10.772Z</createdDate>
+	<createdDate_dt>2018-01-08T15:34:10.772Z</createdDate_dt>
+	<lastModifiedDate>2018-01-08T15:34:10.772Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-08T15:34:10.772Z</lastModifiedDate_dt>
+</page>
