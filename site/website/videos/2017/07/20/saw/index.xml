@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>a993</objectGroupId>
+	<objectId>a9938727-5737-bb1c-7ade-7eff9e953227</objectId>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<internal-name>saw</internal-name>
+	<title>saw</title>
+	<tags>saw</tags>
+	<file-name>index.xml</file-name>
+	<folder-name>saw</folder-name>
+	<description>saw</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/movies/index.xml</key>
+	<value>movies</value>
+	<include>/site/website/categories/movies/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/horror/index.xml</key>
+	<value>horror</value>
+	<include>/site/website/categories/movies/horror/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-11T15:20:09.242Z</createdDate>
+	<createdDate_dt>2018-01-11T15:20:09.242Z</createdDate_dt>
+	<lastModifiedDate>2018-01-11T22:43:10.809Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-11T22:43:10.809Z</lastModifiedDate_dt>
+	<featured>true</featured>
+</page>

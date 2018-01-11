@@ -12,7 +12,7 @@
                 <img src="/static-assets/images/g1 copy.png" title="video-name">
               </a>
               <div class="time">
-                <span>00:10</span>
+                <span>0:10</span>
               </div>
               <div class="grid-info">
                 <div class="video-share">

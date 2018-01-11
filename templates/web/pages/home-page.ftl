@@ -1,10 +1,13 @@
 <#import "/templates/web/layout/default-layout.ftl" as layout/>
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 <#import "/templates/system/common/craftercms-common.ftl" as crafterCommon/>
+<#import "/templates/web/components/carousel-component.ftl" as carousel>
+
 
 
 <@layout.default>
 <div class="content">
+	<@carousel.carousel listVideos=videos/>
     <div class="left-content">
         <div class="searchbar">
             <div class="search-left">

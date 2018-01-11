@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-category</content-type>	<display-template>/templates/web/pages/category-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5809</objectGroupId>
+	<objectId>580914e9-5471-3004-37da-dd5c932e4142</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>rap</folder-name>
+	<internal-name>rap</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-11T16:30:16.043Z</createdDate>
+	<createdDate_dt>2018-01-11T16:30:16.043Z</createdDate_dt>
+	<lastModifiedDate>2018-01-11T16:30:16.043Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-11T16:30:16.043Z</lastModifiedDate_dt>
+</page>

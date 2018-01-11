@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>d3bc</objectGroupId>
+	<objectId>d3bc52c4-630f-8e8e-66b3-5a6551b7b791</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>rapvideo</folder-name>
+	<internal-name>rapvideo</internal-name>
+	<title>rapvideo</title>
+	<tags>rap</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>rapvideo</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rap/index.xml</key>
+	<value>rap</value>
+	<include>/site/website/categories/music/rap/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<createdDate>2018-01-11T16:29:02.952Z</createdDate>
+	<createdDate_dt>2018-01-11T16:29:02.952Z</createdDate_dt>
+	<lastModifiedDate>2018-01-11T16:30:27.498Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-11T16:30:27.498Z</lastModifiedDate_dt>
+</page>

@@ -15,7 +15,6 @@
         </div>
         <div class="categories-types">           
             <@videoList.videoList listVideos=videos title= model.recentVideosLabel/>
-            <@videoList.videoList listVideos=videos title= model.mostViewVideosLabel/>
         </div>
     </div>
     <div class="clear"> </div>

@@ -2,7 +2,7 @@ def queryStatement = 'content-type:"/page/page-video" AND categories.item.key:"'
 
 
 
-def queryStatement1 = contentModel.storeUrl == "/site/website/categories/index.xml" ? 'content-type:"/page/page-video"' :
+def queryStatement1 = contentModel.storeUrl == "/site/website/index.xml" ? 'content-type:"/page/page-video" AND featured: "true"' :
 'content-type:"/page/page-video" AND categories.item.key:"'+ contentModel.storeUrl +'"'
 
 
@@ -22,4 +22,5 @@ items.each { item ->
     videos.add(video)
 }
 
+println contentModel.storeUrl
 templateModel.videos = videos

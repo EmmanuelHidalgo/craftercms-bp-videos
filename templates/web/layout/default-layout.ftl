@@ -18,6 +18,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/static-assets/css/alertify.min.css">
         <link rel="stylesheet" href="/static-assets/css/jstree/style.css" />
+        <link rel="stylesheet" href="/static-assets/css/slick/slick.css"/>
+    	<link rel="stylesheet" href="/static-assets/css/slick/slick-theme.css"/>
 	</head>
 	<body>
 	<!----start-wrap---->
@@ -45,6 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script>window.jQuery || document.write('<script src="/static-assets/js/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="/static-assets/js/alertify.min.js"></script>
     <script src="/static-assets/js/jstree.min.js"></script>
+    <script  src="/static-assets/js/slick.min.js"></script>
     <script src="/static-assets/js/main.js"></script>
 	</body>
 </html>

@@ -33,6 +33,16 @@ function generateChildren(parentChildren) {
     
     
     (function (root, factory) {
+      $('.slider').slick({
+      	  slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+          infinite: true,
+          arrows: true,
+          centerMode: true,
+          mobileFirst: true,
+          autoplay: true
+      });
       $("#form-submit").click(function(e){
               e.preventDefault();
               var thisButton = $(this);
