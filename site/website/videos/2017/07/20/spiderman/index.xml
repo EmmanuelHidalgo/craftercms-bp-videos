@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e16c</objectGroupId>
+	<objectId>e16c3d5b-a9cc-d34c-6332-456940035c96</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>spiderman</folder-name>
+	<internal-name>spiderman</internal-name>
+	<title>spiderman</title>
+	<tags>spiderman</tags>
+	<description>spiderman</description>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/movies/action/index.xml</key>
+	<value>action</value>
+	<include>/site/website/categories/movies/action/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/action/superheroes/index.xml</key>
+	<value>superheroes</value>
+	<include>/site/website/categories/movies/action/superheroes/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/index.xml</key>
+	<value>movies</value>
+	<include>/site/website/categories/movies/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<createdDate>2018-01-11T22:56:07.862Z</createdDate>
+	<createdDate_dt>2018-01-11T22:56:07.862Z</createdDate_dt>
+	<lastModifiedDate>2018-01-11T22:58:35.888Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-11T22:58:35.888Z</lastModifiedDate_dt>
+</page>
