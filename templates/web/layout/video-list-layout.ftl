@@ -1,12 +1,24 @@
 <#import "/templates/web/includes/utils.ftl" as utils/>
 
-<#macro videoList listVideos title>
-    <div class="recent-videos">
-      <h5><img src="/static-assets/images/recent.png" alt="" />${title}</h5>
-      <div class="grids grids2">
-        <#if videos?? >
+<#macro videoList listVideos title shouldSearch containerClass>
+    <div class="${containerClass}">
+     <div class="searchbar">
+            <div class="search-left">
+                <p>${title}</p>
+            </div>
+            <#if shouldSearch=true>
+              <div class="search-right">
+                  <form>
+                      <input type="text"><input type="submit" value="" />
+                  </form>
+              </div>
+            </#if>
+            <div class="clear"> </div>
+        </div>
+     
+      <div class="box">
           <#list listVideos as video>
-            <div class="grid grid2">
+            <div class="grid">
               <h3>${video.queryValue('title')}</h3>
               <a href="${utils.renderURL(video.storeUrl)}">
                 <img src="/static-assets/images/g1 copy.png" title="video-name">
@@ -32,7 +44,6 @@
               </div>
             </div>
           </#list>
-        </#if>
       </div>
     </div>
 </#macro>

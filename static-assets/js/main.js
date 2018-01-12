@@ -39,8 +39,7 @@ function generateChildren(parentChildren) {
           dots: true,
           infinite: true,
           arrows: true,
- 
-          autoplay: false,
+          autoplay: true,
           responsive: [
             {
               breakpoint: 1024,
@@ -48,14 +47,14 @@ function generateChildren(parentChildren) {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: true,
               }
             },
             {
               breakpoint: 720,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
               }
             },
             {
@@ -63,12 +62,9 @@ function generateChildren(parentChildren) {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false
+                arrows: false,
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
       });
       $("#form-submit").click(function(e){

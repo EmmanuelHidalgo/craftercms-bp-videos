@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>024a</objectGroupId>
+	<objectId>024a38fd-d83b-38a9-1d46-99c107e9866d</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>metallica</folder-name>
+	<internal-name>metallica</internal-name>
+	<title>metallica</title>
+	<tags>metallica</tags>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>6000</orderDefault_f>
+	<description>metallica</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rock/metal/index.xml</key>
+	<value>metal</value>
+	<include>/site/website/categories/music/rock/metal/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<createdDate>2018-01-12T19:37:16.754Z</createdDate>
+	<createdDate_dt>2018-01-12T19:37:16.754Z</createdDate_dt>
+	<lastModifiedDate>2018-01-12T19:37:16.754Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-12T19:37:16.754Z</lastModifiedDate_dt>
+</page>

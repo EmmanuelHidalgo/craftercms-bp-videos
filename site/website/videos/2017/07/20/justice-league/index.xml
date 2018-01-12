@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>d683</objectGroupId>
+	<objectId>d6836e5b-00d9-8268-fa1a-2de6d74c071a</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>justice-league</folder-name>
+	<internal-name>justice league</internal-name>
+	<title>Justice League</title>
+	<tags>Justice League</tags>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>Justice League</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/movies/index.xml</key>
+	<value>movies</value>
+	<include>/site/website/categories/movies/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/action/index.xml</key>
+	<value>action</value>
+	<include>/site/website/categories/movies/action/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/movies/action/superheroes/index.xml</key>
+	<value>superheroes</value>
+	<include>/site/website/categories/movies/action/superheroes/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<createdDate>2018-01-12T18:06:06.988Z</createdDate>
+	<createdDate_dt>2018-01-12T18:06:06.988Z</createdDate_dt>
+	<lastModifiedDate>2018-01-12T18:07:30.516Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-12T18:07:30.516Z</lastModifiedDate_dt>
+</page>

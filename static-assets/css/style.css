@@ -69,7 +69,7 @@ body{
 /*----content-----*/
 /*---search-bar----*/
 .left-content{
-	width:70%;
+	width:100%;
 	float:left;
 }
 .search-left{
@@ -164,6 +164,11 @@ body{
 	margin:0px 14.5px;
 }
 */
+
+.left-content .box > .grid {
+	width: 22.9%;
+
+}
 
 /*-----right-content-----*/
 .right-content{

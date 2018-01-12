@@ -1,25 +1,12 @@
-def queryStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ contentModel.storeUrl +'"'
+import scripts.utils.VideosHelper
 
 
+def videosHelper = new VideosHelper(searchService, siteItemService);
 
-def queryStatement1 = contentModel.storeUrl == "/site/website/categories/index.xml" ? 'content-type:"/page/page-video"' :
+//-------Category Videos Service-----------------
+
+def queryStatement = contentModel.storeUrl == "/site/website/categories/index.xml" ? 'content-type:"/page/page-video"' :
 'content-type:"/page/page-video" AND categories.item.key:"'+ contentModel.storeUrl +'"'
 
 
-
-def query = searchService.createQuery()
-query = query.setQuery(queryStatement1)
-query.setParam("sort", "createdDate_dt desc")
-
-def executedQuery = searchService.search(query)
-def itemsFound = executedQuery.response.numFound
-def items = executedQuery.response.documents
-
-def videos = []
-items.each { item ->
-    def id = item.localId
-    def video = siteItemService.getSiteItem(id)
-    videos.add(video)
-}
-
-templateModel.videos = videos
+templateModel.videos = videosHelper.getVideoList(queryStatement)
