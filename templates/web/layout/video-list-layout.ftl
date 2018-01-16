@@ -16,11 +16,11 @@
             <div class="clear"> </div>
         </div>
      
-      <div class="box">
+      <div>
           <#list listVideos as video>
             <div class="grid">
-              <h3>${video.queryValue('title')}</h3>
-              <a href="${utils.renderURL(video.storeUrl)}">
+              <h3>${video.src.queryValue('title')}</h3>
+              <a href="${utils.renderURL(video.src.storeUrl)}">
                 <img src="/static-assets/images/g1 copy.png" title="video-name">
               </a>
               <div class="time">
@@ -35,7 +35,7 @@
                   </ul>
                 </div>
                 <div class="video-watch">
-                  <a href="${utils.renderURL(video.storeUrl)}">Watch Now</a>
+                  <a href="${utils.renderURL(video.src.storeUrl)}">Watch Now</a>
                 </div>
                 <div class="clear"> </div>
                 <div class="lables">

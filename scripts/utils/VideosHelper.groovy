@@ -27,8 +27,15 @@ class VideosHelper {
     items.each { item ->
         def id = item.localId
         def video = siteItemService.getSiteItem(id)
-        videos.add(video)
+        def metaData = ["tags": item.get("tags.item.tagName"), "urls": item.get("tags.item.tagUrl")]
+        def completeVideoInfo = ["src": video, "metaData": metaData]
+        videos.add(completeVideoInfo)
+
+		//println ("......................"+item.get("tags.item.tagName"))        
+        //videos.add(video)
     }
+    
+    
     return videos
   }
  

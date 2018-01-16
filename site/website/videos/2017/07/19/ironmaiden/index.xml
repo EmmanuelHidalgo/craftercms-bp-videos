@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>1dd8</objectGroupId>
+	<objectId>1dd8cc53-bc19-0f34-aa7b-fd9653914828</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>ironmaiden</folder-name>
+	<internal-name>ironmaiden</internal-name>
+	<title>Iron Maiden</title>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>Iron Maiden</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rock/index.xml</key>
+	<value>rock</value>
+	<include>/site/website/categories/music/rock/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/rock/metal/index.xml</key>
+	<value>metal</value>
+	<include>/site/website/categories/music/rock/metal/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<tags>	<item>	<tagName>Music</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>Metal</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>Eddie</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>British</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+	<createdDate>2018-01-12T23:20:52.490Z</createdDate>
+	<createdDate_dt>2018-01-12T23:20:52.490Z</createdDate_dt>
+	<lastModifiedDate>2018-01-15T15:04:17.765Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-15T15:04:17.765Z</lastModifiedDate_dt>
+</page>

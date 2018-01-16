@@ -52,46 +52,17 @@
         </div>
         <div class="clear"> </div>
         <div class="tags">
-            <ul>
-                <li><h3>Tags:</h3></li>
-                <li><a href="#">Games</a> ,</li>
-                <li><a href="#">HD-Videos</a></li>
-            </ul>
+          <ul>
+              <li><h3>Tags:</h3></li>
+              <#if contentModel.tags.item??>
+                <#list contentModel.tags.item as tag>
+                    <li><a href="#">${tag.tagName}</a> ,</li>
+                </#list>
+              </#if>
+          </ul>
         </div>
         <div class="clear"> </div>
     </div>
     <div class="clear"> </div>
-</div>
-<div class="right-content">
-    <div class="popular">
-        <h3>Popular Videos</h3>
-        <p><img src="/static-assets/images/l1.png" title="likes" /> 10,000</p>
-        <div class="clear"> </div>
-    </div>
-    <div class="grid1">
-                <h3>Consectetur adipisicing elit</h3>
-                <a href="#"><img src="/static-assets/images/g7.jpg" title="video-name" /></a>
-                <div class="time1">
-                    <span>2:50</span>
-                </div>
-
-                <div class="grid-info">
-                    <div class="video-share">
-                        <ul>
-                            <li><a href="#"><img src="/static-assets/images/likes.png" title="links" /></a></li>
-                            <li><a href="#"><img src="/static-assets/images/link.png" title="Link" /></a></li>
-                            <li><a href="#"><img src="/static-assets/images/views.png" title="Views" /></a></li>
-                        </ul>
-                    </div>
-                    <div class="video-watch">
-                        <a href="#">Watch Now</a>
-                    </div>
-                    <div class="clear"> </div>
-                    <div class="lables">
-                        <p>Labels:<a href="#">Lorem</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"> </div>
 </div>
 </@layout.default>

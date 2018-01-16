@@ -12,7 +12,7 @@
 	<placeInNav>false</placeInNav>
 	<orderDefault_f>-1</orderDefault_f>
 	<description>macvideo</description>
-	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<video>/static-assets/videos/small.mp4</video>
 	<categories>	<item>	<key>/site/website/categories/technology/computers/laptop/mac/index.xml</key>
 	<value>mac</value>
 	<include>/site/website/categories/technology/computers/laptop/mac/index.xml</include>
@@ -20,6 +20,7 @@
 	</item></categories>
 	<createdDate>2018-01-10T18:18:09.091Z</createdDate>
 	<createdDate_dt>2018-01-10T18:18:09.091Z</createdDate_dt>
-	<lastModifiedDate>2018-01-10T18:18:09.091Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-10T18:18:09.091Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-16T16:30:57.206Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-16T16:30:57.206Z</lastModifiedDate_dt>
+	<featured>true</featured>
 </page>

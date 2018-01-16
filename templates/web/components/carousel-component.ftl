@@ -6,12 +6,13 @@
 <div class="slider">
   <#list listVideos as video>
     <div class="grid">
-      <h3>${video.queryValue('title')}</h3>
-      <a href="${utils.renderURL(video.storeUrl)}">
-         <img src="/static-assets/images/g1 copy.png" title="video-name">
-      </a>
+      <h3>${video.src.queryValue('title')}</h3>
+          <video id ="vid-carousel-${video.src.queryValue('folder-name')}" class="video-carousel" preload="metadata" controls>
+            	<source src="${video.src.queryValue('video')}" type="video/mp4">
+            	<p>Your browser does not support H.264/MP4.</p>
+          </video>
       <div class="time">
-        <span>00:10</span>
+        <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}"></span>
       </div>
       <div class="grid-info">
         <div class="video-share">
@@ -22,11 +23,20 @@
           </ul>
         </div>
         <div class="video-watch">
-          <a href="single.html">Watch Now</a>
+          <a href="${utils.renderURL(video.src.storeUrl)}">Watch Now</a>
         </div>
         <div class="clear"> </div>
+        
         <div class="lables">
-          <p>Labels:<a href="categories.html">Lorem</a></p>
+          <p>Tags:
+          	<#if video.metaData.tags??>
+                  <#list video.metaData.tags as tag>
+                  	<#if tag??>
+                      <a href="${video.metaData.urls[tag?index]}">${tag}</a>,
+                    </#if>
+                  </#list>
+              </#if>
+           </p>
         </div>
       </div>
     </div>

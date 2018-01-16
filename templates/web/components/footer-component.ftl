@@ -65,6 +65,8 @@
     </div>
 </div>
 <div class="clear"> </div>
-<div class="copy-right">
-    <p>&#169 2013 All rights Reserved | Design by &nbsp;<a href="http://w3layouts.com">W3Layouts</a></p>
-</div>
+<#if contentModel.showCopyright="true">
+  <div class="copy-right">
+      <p>&#169 2013 All rights Reserved | Design by &nbsp;<a href="http://w3layouts.com">W3Layouts</a></p>
+  </div>
+</#if>
