@@ -1,13 +1,15 @@
 
 function getVideoTime(time) {
-	const minutes = parseInt(time/60, 10);
-    let seconds = (time % 60).toFixed(0);
-    
-    if (seconds == 0) {
-    	seconds = '00'
-    }
-    
-    return minutes+':'+seconds
+  const minutes = parseInt(time/60, 10);
+  let seconds =  (time % 60).toFixed(0);
+  
+  if (seconds == 0) {
+    seconds = '00'
+  } else if(seconds > 0 && seconds < 10 ) {
+  	seconds = '0'+seconds
+  }
+  
+  return minutes+':'+seconds
 }
 
 function parseData(data) {
@@ -154,5 +156,15 @@ function generateChildren(parentChildren) {
             	const spanElement = document.getElementById('span-'+formatedId)
                 spanElement.innerHTML= videoTime
             }            
-        })	
+        })
+        
+        const tableVideos = $('.video-table').on('loadedmetadata', function() {
+        	const videoTime = getVideoTime(this.duration)
+
+            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
+            if (formatedId != '') {
+            	const spanElement = document.getElementById('span-'+formatedId)
+                spanElement.innerHTML= videoTime
+            }            
+        })
 	  });

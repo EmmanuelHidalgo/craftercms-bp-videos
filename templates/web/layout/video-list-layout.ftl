@@ -20,11 +20,12 @@
           <#list listVideos as video>
             <div class="grid">
               <h3>${video.src.queryValue('title')}</h3>
-              <a href="${utils.renderURL(video.src.storeUrl)}">
-                <img src="/static-assets/images/g1 copy.png" title="video-name">
-              </a>
+                 <video id ="vid-table-${video.src.queryValue('folder-name')}" class="video-table" preload="metadata" controls>
+                    <source src="${video.src.queryValue('video')}" type="video/mp4">
+                    <p>Your browser does not support H.264/MP4.</p>
+                  </video>
               <div class="time">
-                <span>0:10</span>
+                <span id="span-table-${video.src.queryValue('folder-name')}">0:10</span>
               </div>
               <div class="grid-info">
                 <div class="video-share">
@@ -39,7 +40,15 @@
                 </div>
                 <div class="clear"> </div>
                 <div class="lables">
-                  <p>Labels:<a href="#">Lorem</a></p>
+                  <p>Tags:
+                    <#if video.metaData.tags??>
+                          <#list video.metaData.tags as tag>
+                            <#if tag??>
+                              <a href="${video.metaData.urls[tag?index]}">${tag}</a>,
+                            </#if>
+                          </#list>
+                      </#if>
+                   </p>
                 </div>
               </div>
             </div>

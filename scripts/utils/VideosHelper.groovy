@@ -18,7 +18,7 @@ class VideosHelper {
   	def query = searchService.createQuery()
     query = query.setQuery(statement)
     query.setParam("sort", "createdDate_dt desc")
-     query.setParam("rows", "100")
+     query.setParam("rows", "10")
     def executedQuery = searchService.search(query)
     def itemsFound = executedQuery.response.numFound
     def items = executedQuery.response.documents
