@@ -53,7 +53,8 @@ function generateChildren(parentChildren) {
       dots: true,
       infinite: true,
       arrows: true,
-      autoplay: false,
+      autoplay: true,
+      focusOnSelect: false,
       responsive: [
         {
           breakpoint: 1024,

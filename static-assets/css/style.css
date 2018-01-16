@@ -921,6 +921,10 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.grid {
 		width: 28%;
 	}
+    
+    .left-content .grid {
+		width: 46%;
+	}
 }
 @media screen and (max-width:768px) {
 	.left-content {
@@ -995,6 +999,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		margin: 2em auto 0;
 	}
 	.recent-videos .grid {
+		width: 90%;
+	}
+    .left-content .grid {
 		width: 90%;
 	}
 }
