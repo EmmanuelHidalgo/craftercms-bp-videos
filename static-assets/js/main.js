@@ -44,16 +44,72 @@ function generateChildren(parentChildren) {
             }
     })
 }
-    
-    
+
+
+function videoHandler(videoClass, videoType){
+  return $(videoClass).on('click', function () {
+    const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
+      const video = document.getElementById(videoType+formatedId)        
+      video.onseeked = () => {
+      video.controls = true;
+        this.style.visibility = "hidden";
+      }
+      
+      video.onseeking = () => {
+      video.controls = true;
+        this.style.visibility = "hidden";
+      }
+
+      video.onpause = () => {
+        if (video.paused) {
+            video.controls = false;
+          this.style.visibility = "visible";
+          }   
+      }
+      
+      if (video.paused && !video.seeking) {
+        video.play()
+          video.controls = true;
+          this.style.visibility = "hidden";
+      }
+  })
+}
+        
   (function (root, factory) {
+  
+  $(document).ready(function() {
+    	const carouselVideos = $('.video-carousel').on('loadedmetadata', function() {
+        	const videoTime = getVideoTime(this.duration)
+
+            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
+            if (formatedId != '') {
+            	const spanElement = document.getElementById('span-'+formatedId)
+                spanElement.innerHTML= videoTime
+            }            
+        })
+        
+        const tableVideos = $('.video-table').on('loadedmetadata', function() {
+        	const videoTime = getVideoTime(this.duration)
+
+            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
+            if (formatedId != '') {
+            	const spanElement = document.getElementById('span-'+formatedId)
+                spanElement.innerHTML= videoTime
+            }            
+        })
+        
+         const carouselPlayer = videoHandler('.carousel-player-container', 'vid-')
+         const tablePlayer = videoHandler('.table-player-container', 'vid-')
+	  });
+  
+  
     $('.slider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
       dots: true,
       infinite: true,
       arrows: true,
-      autoplay: true,
+      autoplay: false,
       focusOnSelect: false,
       responsive: [
         {
@@ -91,8 +147,6 @@ function generateChildren(parentChildren) {
       if(!thisButton.hasClass("loading") && !thisButton.hasClass("done")){
         var frm = $("#contact");
         if (!frm[0].checkValidity()) {
-          // If the form is invalid, submit it. The form won't actually submit;
-          // this will just cause the browser to display the native HTML5 error messages.
           frm.find('input[type=submit]').click()
         } else {
           var data = frm.serializeArray();
@@ -147,25 +201,3 @@ function generateChildren(parentChildren) {
           console.error(error);
         })
   })();
-    
-    $(document).ready(function() {
-    	const carouselVideos = $('.video-carousel').on('loadedmetadata', function() {
-        	const videoTime = getVideoTime(this.duration)
-
-            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
-            if (formatedId != '') {
-            	const spanElement = document.getElementById('span-'+formatedId)
-                spanElement.innerHTML= videoTime
-            }            
-        })
-        
-        const tableVideos = $('.video-table').on('loadedmetadata', function() {
-        	const videoTime = getVideoTime(this.duration)
-
-            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
-            if (formatedId != '') {
-            	const spanElement = document.getElementById('span-'+formatedId)
-                spanElement.innerHTML= videoTime
-            }            
-        })
-	  });

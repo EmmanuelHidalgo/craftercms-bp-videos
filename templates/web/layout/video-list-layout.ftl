@@ -20,11 +20,14 @@
           <#list listVideos as video>
             <div class="grid">
               <h3>${video.src.queryValue('title')}</h3>
-                 <video id ="vid-table-${video.src.queryValue('folder-name')}" class="video-table" preload="metadata" controls>
+                 <video id ="vid-table-${video.src.queryValue('folder-name')}" class="video-table" preload="metadata">
                     <source src="${video.src.queryValue('video')}" type="video/mp4">
                     <p>Your browser does not support H.264/MP4.</p>
-                  </video>
-              <div class="time">
+                 </video>
+                 <div class="table-player-container" id="player-table-${video.src.queryValue('folder-name')}">
+          			<span></span>
+          		</div>
+              <div class="time" class= "time-video-table">
                 <span id="span-table-${video.src.queryValue('folder-name')}">0:10</span>
               </div>
               <div class="grid-info">
