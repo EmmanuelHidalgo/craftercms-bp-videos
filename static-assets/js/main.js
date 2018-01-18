@@ -46,63 +46,68 @@ function generateChildren(parentChildren) {
 }
 
 
-function videoHandler(videoClass, videoType){
+function videoHandler(videoClass){
   return $(videoClass).on('click', function () {
     const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
-      const video = document.getElementById(videoType+formatedId)        
+      const video = document.getElementById('vid-'+formatedId)        
+  
       video.onseeked = () => {
       video.controls = true;
+      	this.paused = false;
         this.style.visibility = "hidden";
       }
       
       video.onseeking = () => {
-      video.controls = true;
+        video.controls = true;
+        video.paused = false;
         this.style.visibility = "hidden";
       }
 
-      video.onpause = () => {
-        if (video.paused) {
-            video.controls = false;
-          this.style.visibility = "visible";
-          }   
+      video.onplaying = () => {
+      	this.style.visibility = "hidden";
+        video.paused = false;
       }
       
-      if (video.paused && !video.seeking) {
-        video.play()
+      video.onpause = () => {
+        video.controls = true;
+        this.style.visibility = "visible";
+      }
+      
+      if(video.paused) {
+          video.play()
           video.controls = true;
           this.style.visibility = "hidden";
       }
   })
 }
+
+function timeLabelHandler(videoClass){
+ return $(videoClass).on('durationchange', function() {
+        	const videoTime = getVideoTime(this.duration)
+
+            const formatedId = this.id.split('-').splice(1,this.id.length).join('-')
+            if (formatedId != '') {
+            const spanElement = document.getElementById('span-'+formatedId)
+            spanElement.innerHTML= videoTime
+          }                               
+   })
+}
         
   (function (root, factory) {
   
   $(document).ready(function() {
-    	const carouselVideos = $('.video-carousel').on('loadedmetadata', function() {
-        	const videoTime = getVideoTime(this.duration)
-
-            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
-            if (formatedId != '') {
-            	const spanElement = document.getElementById('span-'+formatedId)
-                spanElement.innerHTML= videoTime
-            }            
-        })
-        
-        const tableVideos = $('.video-table').on('loadedmetadata', function() {
-        	const videoTime = getVideoTime(this.duration)
-
-            const formatedId= this.id.split('-').splice(1,this.id.length).join('-')
-            if (formatedId != '') {
-            	const spanElement = document.getElementById('span-'+formatedId)
-                spanElement.innerHTML= videoTime
-            }            
-        })
-        
-         const carouselPlayer = videoHandler('.carousel-player-container', 'vid-')
-         const tablePlayer = videoHandler('.table-player-container', 'vid-')
-	  });
+        const carouselVideos = timeLabelHandler('.video-carousel');
+        const tableVideos = timeLabelHandler('.video-table');
+        const carouselPlayer = videoHandler('.carousel-player-container');
+        const tablePlayer = videoHandler('.table-player-container');
+      });
   
-  
+    $('.paginationPage').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        alert('voy a pedir!!!')
+      });
+                  
     $('.slider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -131,9 +136,9 @@ function videoHandler(videoClass, videoType){
         {
           breakpoint: 320,
           settings: {
+          	arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
           }
         }
       ]

@@ -340,6 +340,11 @@ body{
 	padding: 5px 10px;
 	font-family: 'Ropa Sans', sans-serif;
 }
+
+.grid > .time {
+	bottom: 42px;
+}
+
 .grid{
 	position: relative;
 }

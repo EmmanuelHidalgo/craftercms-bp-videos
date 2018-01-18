@@ -12,7 +12,7 @@
 	<placeInNav>false</placeInNav>
 	<orderDefault_f>-1</orderDefault_f>
 	<description>test01</description>
-	<video/>
+	<video>/static-assets/videos/small.mp4</video>
 	<categories>	<item>	<key>/site/website/categories/science/index.xml</key>
 	<value>Science</value>
 	<include>/site/website/categories/science/index.xml</include>
@@ -20,7 +20,7 @@
 	</item></categories>
 	<createdDate>2018-01-10T15:14:38.985Z</createdDate>
 	<createdDate_dt>2018-01-10T15:14:38.985Z</createdDate_dt>
-	<lastModifiedDate>2018-01-15T19:59:09.800Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-15T19:59:09.800Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-17T22:21:49.872Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-17T22:21:49.872Z</lastModifiedDate_dt>
 	<featured>false</featured>
 </page>

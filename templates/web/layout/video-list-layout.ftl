@@ -28,7 +28,7 @@
           			<span></span>
           		</div>
               <div class="time" class= "time-video-table">
-                <span id="span-table-${video.src.queryValue('folder-name')}">0:10</span>
+                <span id="span-table-${video.src.queryValue('folder-name')}"></span>
               </div>
               <div class="grid-info">
                 <div class="video-share">
@@ -57,5 +57,16 @@
             </div>
           </#list>
       </div>
+      <div class="clear"> </div>
+        <ul class="dc_pagination dc_paginationA dc_paginationA03">
+          <li><a href="#" class="first">First</a></li>
+          <li><a href="#" class="previous">Previous</a></li>
+          <#list 1..listVideos[0].totalItems as n>
+          	<li><a id="page-number-${n}" class="pagination-page">${n}</a></li>
+          </#list>
+          <li><a href="#" class="next">Next</a></li>
+          <li><a href="#" class="last">Last</a></li>
+         </ul>
+    <div class="clear"> </div>
     </div>
 </#macro>
