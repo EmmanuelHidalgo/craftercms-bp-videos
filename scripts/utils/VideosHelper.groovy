@@ -17,9 +17,14 @@ class VideosHelper {
   def getVideoList(statement) {
   	def query = searchService.createQuery()
     query = query.setQuery(statement)
+
+    
     query.setParam("sort", "createdDate_dt desc")
-     query.setParam("rows", "10")
+    query.setParam("start", "0")
+    query.setParam("rows", "10")
+   
     def executedQuery = searchService.search(query)
+    def start = executedQuery.response.start
     def itemsFound = executedQuery.response.numFound
     def items = executedQuery.response.documents
     
@@ -29,7 +34,7 @@ class VideosHelper {
         def video = siteItemService.getSiteItem(id)
         def pageNumbers = itemsFound/10
         def metaData = ["tags": item.get("tags.item.tagName"), "urls": item.get("tags.item.tagUrl")]
-        def completeVideoInfo = ["src": video, "metaData": metaData, "totalItems": Math.round(pageNumbers)]
+        def completeVideoInfo = ["src": video, "metaData": metaData, "totalItems": Math.round(pageNumbers), "start": start]
         videos.add(completeVideoInfo)
     }
     

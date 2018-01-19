@@ -16,46 +16,8 @@
             <div class="clear"> </div>
         </div>
      
-      <div>
-          <#list listVideos as video>
-            <div class="grid">
-              <h3>${video.src.queryValue('title')}</h3>
-                 <video id ="vid-table-${video.src.queryValue('folder-name')}" class="video-table" preload="metadata">
-                    <source src="${video.src.queryValue('video')}" type="video/mp4">
-                    <p>Your browser does not support H.264/MP4.</p>
-                 </video>
-                 <div class="table-player-container" id="player-table-${video.src.queryValue('folder-name')}">
-          			<span></span>
-          		</div>
-              <div class="time" class= "time-video-table">
-                <span id="span-table-${video.src.queryValue('folder-name')}"></span>
-              </div>
-              <div class="grid-info">
-                <div class="video-share">
-                  <ul>
-                    <li><a href="#"><img src="/static-assets/images/likes.png" title="links"></a></li>
-                    <li><a href="#"><img src="/static-assets/images/link.png" title="Link"></a></li>
-                    <li><a href="#"><img src="/static-assets/images/views.png" title="Views"></a></li>
-                  </ul>
-                </div>
-                <div class="video-watch">
-                  <a href="${utils.renderURL(video.src.storeUrl)}">Watch Now</a>
-                </div>
-                <div class="clear"> </div>
-                <div class="lables">
-                  <p>Tags:
-                    <#if video.metaData.tags??>
-                          <#list video.metaData.tags as tag>
-                            <#if tag??>
-                              <a href="${video.metaData.urls[tag?index]}">${tag}</a>,
-                            </#if>
-                          </#list>
-                      </#if>
-                   </p>
-                </div>
-              </div>
-            </div>
-          </#list>
+      <div id="gridContainer">
+
       </div>
       <div class="clear"> </div>
         <ul class="dc_pagination dc_paginationA dc_paginationA03">

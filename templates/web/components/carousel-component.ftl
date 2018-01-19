@@ -38,6 +38,8 @@
                       <a href="${video.metaData.urls[tag?index]}">${tag}</a>,
                     </#if>
                   </#list>
+                  <#else>
+              		There are no tags for this video
               </#if>
            </p>
         </div>
