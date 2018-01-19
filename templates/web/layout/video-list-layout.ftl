@@ -16,7 +16,7 @@
             <div class="clear"> </div>
         </div>
      
-      <div id="gridContainer">
+      <div id="gridContainer" style="display: none;">
 
       </div>
       <div class="clear"> </div>

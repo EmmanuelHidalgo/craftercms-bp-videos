@@ -15,7 +15,7 @@
           		<span></span>
           </div>
       <div class="time">
-        <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}"></span>
+        <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>
       </div>
       <div class="grid-info">
         <div class="video-share">

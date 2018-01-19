@@ -1,4 +1,7 @@
 function getVideoTime(time) {
+  if(isNaN(time)){
+  	return 'Loading...'
+  }
   const minutes = parseInt(time/60, 10);
   let seconds =  (time % 60).toFixed(0);
   if (seconds == 0) {
@@ -80,9 +83,9 @@ function videoHandler(videoClass){
   })
 }
 
+
 function timeLabelHandler(videoClass){
  const videoCollection = $(videoClass);
-
  $.each(videoCollection, function() {
  	const videoElement = this;
     setTimeout(()=> {
@@ -94,7 +97,7 @@ function timeLabelHandler(videoClass){
         spanElement.innerHTML= videoTime
       }
    }
-    }, 1000)
+    }, 0)
  })
 }
 
@@ -125,7 +128,7 @@ function generateGridVideos(data){
               <span><span>
           </div>
           <div class="time" class="time-video-table">
-              <span id="span-table-${video.src.dom.page["folder-name"]}"></span>
+              <span id="span-table-${video.src.dom.page["folder-name"]}">Loading...</span>
           </div>
           <div class="grid-info">
               <div class="video-share">
@@ -145,32 +148,43 @@ function generateGridVideos(data){
                   </p>
               </div>
           </div>
-       </grid>
+       </div>
       `
   })
-container.append(videos)
+  container.append(videos)
+  $(".video-table").on("durationchange", ()=> {
+    const tablePlayer = videoHandler('.table-player-container');
+  	const tableVideos = timeLabelHandler('.video-table');
+  })
+  const tablePlayer = videoHandler('.table-player-container');
+  const tableVideos = timeLabelHandler('.video-table');
 }
 
         
 function requestVideos(start, categoryPath) {
   $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath)
     .done((data)=> {
-           console.log(data)
-          if(data.length > 0) {
-      generateGridVideos(data)
-        const tablePlayer = videoHandler('.table-player-container');
-      const tableVideos = timeLabelHandler('.video-table');
-    }   
+     	if(data.length > 0) {
+      	const p = new Promise((resolve)=> {
+        	generateGridVideos(data)        
+            resolve('success')
+         })
+         p.then(()=>{
+             $("#gridContainer").css("display","block");
+         })
+    	}   
     });
 }
 
 
 (function (root, factory) {
   $(document).ready(function() {
+    $(".video-carousel").on("durationchange", ()=> {
+    const tablePlayer = videoHandler('.carousel-player-container');
+  	const tableVideos = timeLabelHandler('.video-carousel');
+  	})
     const carouselVideos = timeLabelHandler('.video-carousel');
-    const tableVideos = timeLabelHandler('.video-table');
     const carouselPlayer = videoHandler('.carousel-player-container');
-    const tablePlayer = videoHandler('.table-player-container');
   });
 
   $('.pagination-page').on('click', function(e){
@@ -179,7 +193,7 @@ function requestVideos(start, categoryPath) {
     const pageNumber = this.id.split('-')[2]
     const start = pageNumber == 1 ? 0 : (pageNumber*10)-10
     requestVideos(start)
-  });//termina el pagination
+  });
 
   requestVideos(0)
 
@@ -270,13 +284,7 @@ function requestVideos(start, categoryPath) {
         state:{key: 'jstree'},
         plugins:['state','unique']
       });
-      //$('#jstree').on("changed.jstree", function (e, data) {
-        //if (data && data.node) {
-          //const url = data.node.original.url
-              //const formatedUrl = url.split('/').splice(3,url.length).join('/')
-                  //window.location = '/'+formatedUrl;
-        //}  
-      //});
+
       $('#jstree').on("select_node.jstree", function (e, data) {
          console.log(data)  
       	 requestVideos(0, data.node.original.url)

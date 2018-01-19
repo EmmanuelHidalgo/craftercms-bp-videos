@@ -11,7 +11,7 @@
 	<@carousel.carousel listVideos=featuredVideos/>
     
     <div class="left-content">
-        <@videoList.videoList listVideos=recentVideos title= "Recent Videos" shouldSearch=true containerClass=""/>
+        <@videoList.videoList  listVideos=recentVideos title= "Recent Videos" shouldSearch=true containerClass=""/>
     </div>
     <div class="clear"> </div>
     
