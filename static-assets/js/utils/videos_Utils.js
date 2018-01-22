@@ -18,25 +18,25 @@ function videoHandler(videoClass){
         const video = document.getElementById('vid-'+formatedId)        
 
         video.onseeked = () => {
-        video.controls = true;
-            this.paused = false;
-        this.style.visibility = "hidden";
+          video.controls = true;
+          this.paused = false;
+          this.style.visibility = "hidden";
         }
         
         video.onseeking = () => {
-        video.controls = true;
-        video.paused = false;
-        this.style.visibility = "hidden";
+          video.controls = true;
+          video.paused = false;
+          this.style.visibility = "hidden";
         }
 
         video.onplaying = () => {
-            this.style.visibility = "hidden";
-        video.paused = false;
+          this.style.visibility = "hidden";
+          video.paused = false;
         }
         
         video.onpause = () => {
-        video.controls = true;
-        this.style.visibility = "visible";
+          video.controls = true;
+          this.style.visibility = "visible";
         }
         
         if(video.paused) {

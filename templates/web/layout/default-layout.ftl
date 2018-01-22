@@ -48,8 +48,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="/static-assets/js/alertify.min.js"></script>
     <script src="/static-assets/js/jstree.min.js"></script>
     <!----Main-App Utils---->
+    <script src="/static-assets/js/utils/mail_Utils.js"></script>
+    <script src="/static-assets/js/utils/slider_Utils.js"></script>
     <script src="/static-assets/js/utils/jsTree_Utils.js"></script>
     <script src="/static-assets/js/utils/videos_Utils.js"></script>
+    <script src="/static-assets/js/utils/pagination_Utils.js"></script>
     <!----Main-App Libraries---->
     <script  src="/static-assets/js/slick.min.js"></script>
     <script src="/static-assets/js/main.js"></script>
