@@ -678,6 +678,7 @@ ul.dc_pagination li {
 ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	background: rgb(30, 93, 173);
 	color: #fff !important;
+    cursor: pointer;
 	
 }
 /*  Contact Form  ============================================================================= */

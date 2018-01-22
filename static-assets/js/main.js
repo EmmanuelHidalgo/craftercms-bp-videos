@@ -1,4 +1,5 @@
 (function (root, factory) {
+  //-------------Videos-------------//
   $(document).ready(function() {
     $(".video-carousel").on("durationchange", ()=> {
     const tablePlayer = videoHandler('.carousel-player-container');
@@ -8,22 +9,47 @@
     const carouselPlayer = videoHandler('.carousel-player-container');
   });
   
+  requestVideos(0)
+  
+  //-------------Pagination-------------//
   $("#page-number-1").addClass('current')
+  
   $('.pagination-page').on('click', function(e){
     e.preventDefault();
     e.stopPropagation();
     navigate(this);
   });
-
-  requestVideos(0)
-
+  
+  $("#first-btn").on('click', function(e){
+  	e.preventDefault();
+  	goFirst()
+  });
+  
+  $("#last-btn").on('click', function(e){
+  	e.preventDefault();
+  	goLast()
+  });
+  
+  $("#next-btn").on('click', function(e){
+  	e.preventDefault();
+  	go('next')
+  })
+  
+  $("#previous-btn").on('click', function(e){
+  	e.preventDefault();
+  	go('previous')
+  })
+  
+  //-------------Slider-------------//
   $('.slider').slick(getSliderConfig());
-
+ 
+  //-------------Mail-------------//
   $("#form-submit").click(function(e){
     e.preventDefault();
     sendMail(this)
   });
 
+   //-------------Categories-------------//
   var api = "/api/site-map.json"
   $.ajax({
     type: "GET",
