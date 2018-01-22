@@ -17,7 +17,6 @@ class VideosHelper2 {
   }
 
   def getVideoList(statement) {
-  	println statement
   	def query = searchService.createQuery()
     query = query.setQuery(statement)
 
@@ -29,6 +28,8 @@ class VideosHelper2 {
     def executedQuery = searchService.search(query)
     def start = executedQuery.response.start
     def itemsFound = executedQuery.response.numFound
+    def actualItemsFound = executedQuery.response.documents.length
+    println "................."+executedQuery.response.documents.length
     def items = executedQuery.response.documents
     
     def videos = []
