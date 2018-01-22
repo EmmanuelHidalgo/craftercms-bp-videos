@@ -14,11 +14,20 @@ $(document).ready(function() {
   const tablePlayer = videoHandler('.carousel-player-container');
   const tableVideos = timeLabelHandler('.video-carousel');
   })
-  const carouselVideos = timeLabelHandler('.video-carousel');
-  const carouselPlayer = videoHandler('.carousel-player-container');
+  //const carouselVideos = timeLabelHandler('.video-carousel');
+  //const carouselPlayer = videoHandler('.carousel-player-container');
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
   requestVideos(0)
+  
+  /*
+    This code handles the search service for the videos
+  */
+  $("#search-form").on('submit', function(e){
+  	e.preventDefault()
+    const inputText = $('#input-search-text').val()
+    searchVideos(0, inputText)
+  })
   
   /*
     This code is the one in charge of all pagination connections to the dom,

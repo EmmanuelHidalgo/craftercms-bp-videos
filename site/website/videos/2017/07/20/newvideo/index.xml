@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>928f</objectGroupId>
+	<objectId>928f6f9d-044c-d7c3-65d8-d38ee9634a67</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>newvideo</folder-name>
+	<internal-name>new video</internal-name>
+	<title>New Video</title>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>New Video</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/technology/index.xml</key>
+	<value>Technology</value>
+	<include>/site/website/categories/technology/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<tags>	<item>	<tagName>tag1</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>tag2</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>tag3</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+	<createdDate>2018-01-22T18:46:57.450Z</createdDate>
+	<createdDate_dt>2018-01-22T18:46:57.450Z</createdDate_dt>
+	<lastModifiedDate>2018-01-22T18:46:57.450Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-22T18:46:57.450Z</lastModifiedDate_dt>
+</page>

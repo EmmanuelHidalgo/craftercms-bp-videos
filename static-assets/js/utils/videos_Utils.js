@@ -117,10 +117,10 @@ function generateGridVideos(data){
     container.append(videos)
     $(".video-table").on("durationchange", ()=> {
       const tablePlayer = videoHandler('.table-player-container');
-        const tableVideos = timeLabelHandler('.video-table');
+      const tableVideos = timeLabelHandler('.video-table');
     })
-    const tablePlayer = videoHandler('.table-player-container');
-    const tableVideos = timeLabelHandler('.video-table');
+    //const tablePlayer = videoHandler('.table-player-container');
+    //const tableVideos = timeLabelHandler('.video-table');
 }
 
 function requestVideos(start, categoryPath) {
@@ -135,6 +135,27 @@ function requestVideos(start, categoryPath) {
                $("#gridContainer").css("display","block");
            })
           }   
+        })
+      .fail((error)=> {
+          console.log(error)   
+        });
+}
+
+function searchVideos(start, videoText) {
+    $.get("/api/1/services/search.json?start="+start+"&searchValue="+videoText)
+      .done((data)=> {
+           if(data.length > 0) {
+            const p = new Promise((resolve)=> {
+              generateGridVideos(data)        
+              resolve('success')
+           })
+           p.then(()=>{
+               $("#gridContainer").css("display","block");
+           })
+          }   
+        })
+      .fail((error)=> {
+          console.log(error)   
         });
 }
 

@@ -8,8 +8,9 @@
             </div>
             <#if shouldSearch=true>
               <div class="search-right">
-                  <form>
-                      <input type="text"><input type="submit" value="" />
+                  <form id="search-form">
+                      <input type="text" id="input-search-text">
+                      <input type="submit" value="" />
                   </form>
               </div>
             </#if>
