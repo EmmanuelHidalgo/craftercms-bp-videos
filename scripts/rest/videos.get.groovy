@@ -1,10 +1,10 @@
-import scripts.utils.VideosHelper2
+import scripts.utils.VideosHelper
 
 def start = params.start
 def categoryPath = params.category
 
 
-def videosHelper2 = new VideosHelper2(searchService, siteItemService, start);
+def videosHelper = new VideosHelper(searchService, siteItemService, start);
 def recentVideosStatement = ''
 
 if(categoryPath == 'undefined') {
@@ -14,7 +14,7 @@ if(categoryPath == 'undefined') {
   recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'"'
 }
 
-return videosHelper2.getVideoListV2(recentVideosStatement)
+return videosHelper.getVideoList(recentVideosStatement)
 
 
 

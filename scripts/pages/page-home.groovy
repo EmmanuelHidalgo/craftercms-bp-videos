@@ -1,14 +1,7 @@
-import scripts.utils.VideosHelper
+import scripts.utils.CarouselHelper
 
-
-def videosHelper = new VideosHelper(searchService, siteItemService);
-
+def carouselHelper = new CarouselHelper(searchService, siteItemService);
 def carouselVideosStatement ='content-type:"/page/page-video" AND featured: "true"';
-def recentVideosStatement = 'content-type:"/page/page-video"';
 
+templateModel.featuredVideos = carouselHelper.getCarouselList(carouselVideosStatement)
 
-templateModel.featuredVideos = videosHelper.getVideoList(carouselVideosStatement)
-
-templateModel.recentVideos = videosHelper.getVideoList(recentVideosStatement)
-
-//println videosHelper.getVideoListV2(recentVideosStatement)

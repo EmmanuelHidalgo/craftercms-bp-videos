@@ -1,6 +1,6 @@
 <#import "/templates/web/includes/utils.ftl" as utils/>
 
-<#macro videoList listVideos title shouldSearch containerClass>
+<#macro videoList title shouldSearch containerClass>
     <div class="${containerClass}">
      <div class="searchbar">
             <div class="search-left">
