@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5a18</objectGroupId>
+	<objectId>5a18a25c-f7ac-28a5-31a3-64f13cc40aec</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test07</folder-name>
+	<internal-name>test07</internal-name>
+	<title>test07</title>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>test07</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/technology/index.xml</key>
+	<value>Technology</value>
+	<include>/site/website/categories/technology/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<tags>	<item>	<tagName>test07</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>tagTest07</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+	<createdDate>2018-01-22T22:33:04.040Z</createdDate>
+	<createdDate_dt>2018-01-22T22:33:04.040Z</createdDate_dt>
+	<lastModifiedDate>2018-01-22T22:33:04.040Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-22T22:33:04.040Z</lastModifiedDate_dt>
+</page>

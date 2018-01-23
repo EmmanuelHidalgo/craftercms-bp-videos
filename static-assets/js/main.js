@@ -1,3 +1,4 @@
+
 /*
   Main JS of the app, here you can find all the
   main initializations and interactions of the page components,
@@ -14,8 +15,6 @@ $(document).ready(function() {
   const tablePlayer = videoHandler('.carousel-player-container');
   const tableVideos = timeLabelHandler('.video-carousel');
   })
-  //const carouselVideos = timeLabelHandler('.video-carousel');
-  //const carouselPlayer = videoHandler('.carousel-player-container');
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
   requestVideos(0)
@@ -29,38 +28,6 @@ $(document).ready(function() {
     searchVideos(0, inputText)
   })
   
-  /*
-    This code is the one in charge of all pagination connections to the dom,
-    the functions navigate, go, goLast, goNext can be found in
-    pagination_Utils.js inside Utils folder
-  */
-  $("#page-number-1").addClass('current')
-  
-  $('.pagination-page').on('click', function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    navigate(this);
-  });
-  
-  $("#first-btn").on('click', function(e){
-    e.preventDefault();
-    goFirst()
-  });
-  
-  $("#last-btn").on('click', function(e){
-    e.preventDefault();
-    goLast()
-  });
-  
-  $("#next-btn").on('click', function(e){
-    e.preventDefault();
-    go('next')
-  })
-  
-  $("#previous-btn").on('click', function(e){
-    e.preventDefault();
-    go('previous')
-  })
   
   /*
     This code is the one in charge of load the slider (carousel) into the dom
@@ -102,6 +69,7 @@ $(document).ready(function() {
       });
 
       $('#jstree').on("select_node.jstree", function (e, data) {
+      	  state = data.node.original.url
           requestVideos(0, data.node.original.url)
       });
     }

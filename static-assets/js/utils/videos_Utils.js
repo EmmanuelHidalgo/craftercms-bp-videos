@@ -67,8 +67,10 @@ function timeLabelHandler(videoClass){
 function generateTags(tags) {
     if(!tags) return `There are no tags fo this video`
   
-    return tags.map((tag) => {        
-        return `<a href="#">${tag}</a>`
+    return tags.map((tag) => { 
+        if(!tag.name && !tag.tagName) return
+        
+        return `<a href="${tag.tagUrl}">${tag.tagName}</a>`
     })
 }
 
@@ -79,11 +81,11 @@ function generateVideoUrl(url){
 function generateGridVideos(data){
     const container = $("#gridContainer")
     container.empty();
-    const videos = data.map((video)=> {
+    const videos = data.responseVideos.map((video)=> {
         return `
          <div class = "grid">
             <h3>${video.src.dom.page.title}</h3>
-            <video id="vid-table-${video.src.dom.page["folder-name"]}" class="video-table" preload="metadata">
+            <video id="vid-table-${video.src.dom.page["folder-name"]}" class="video-table" preload="auto">
                 <source src="${video.src.dom.page.video}" type="video/mp4">
                 <p>Your browser does not support H.264/mp4</p>
             </video>
@@ -107,7 +109,7 @@ function generateGridVideos(data){
                 <div class="clear"></div>
                 <div class="lables">
                     <p>Tags:
-                        ${generateTags(video.metaData.tags)}
+                        ${generateTags(video.tags)}
                     </p>
                 </div>
             </div>
@@ -119,20 +121,20 @@ function generateGridVideos(data){
       const tablePlayer = videoHandler('.table-player-container');
       const tableVideos = timeLabelHandler('.video-table');
     })
-    //const tablePlayer = videoHandler('.table-player-container');
-    //const tableVideos = timeLabelHandler('.video-table');
 }
 
 function requestVideos(start, categoryPath) {
     $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath)
       .done((data)=> {
-           if(data.length > 0) {
+           if(data) {
             const p = new Promise((resolve)=> {
               generateGridVideos(data)        
               resolve('success')
            })
            p.then(()=>{
                $("#gridContainer").css("display","block");
+                   generatePagination((data.totalCount/10) + 1, data.selectedPage)
+    			   handlePagination()
            })
           }   
         })
@@ -144,13 +146,15 @@ function requestVideos(start, categoryPath) {
 function searchVideos(start, videoText) {
     $.get("/api/1/services/search.json?start="+start+"&searchValue="+videoText)
       .done((data)=> {
-           if(data.length > 0) {
+           if(data) {
             const p = new Promise((resolve)=> {
               generateGridVideos(data)        
               resolve('success')
            })
            p.then(()=>{
                $("#gridContainer").css("display","block");
+                generatePagination((data.totalCount/10) + 1, data.selectedPage)
+                handlePagination()
            })
           }   
         })

@@ -2,17 +2,16 @@
 <page>
 	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>c21f</objectGroupId>
-	<objectId>c21f701c-e2e6-e315-b917-8130a6e5d872</objectId>
+	<objectGroupId>f25a</objectGroupId>
+	<objectId>f25ad902-dd88-63ba-c81f-12d1d6f96d4b</objectId>
 	<file-name>index.xml</file-name>
-	<folder-name>test01</folder-name>
-	<internal-name>test01</internal-name>
-	<title>test01</title>
-	<tags>test01</tags>
+	<folder-name>test04</folder-name>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<internal-name>test04</internal-name>
+	<title>test04</title>
 	<placeInNav>false</placeInNav>
 	<orderDefault_f>-1</orderDefault_f>
-	<description>test01</description>
-	<video>/static-assets/videos/small.mp4</video>
+	<description>test04</description>
 	<categories>	<item>	<key>/site/website/categories/science/index.xml</key>
 	<value>Science</value>
 	<include>/site/website/categories/science/index.xml</include>
@@ -22,9 +21,14 @@
 	<include>/site/website/categories/music/index.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></categories>
-	<createdDate>2018-01-10T15:14:38.985Z</createdDate>
-	<createdDate_dt>2018-01-10T15:14:38.985Z</createdDate_dt>
-	<lastModifiedDate>2018-01-23T17:24:50.662Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-23T17:24:50.662Z</lastModifiedDate_dt>
-	<featured>false</featured>
+	<featured>true</featured>
+	<tags>	<item>	<tagName>test04</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>test04Tag</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+	<createdDate>2018-01-22T22:27:20.425Z</createdDate>
+	<createdDate_dt>2018-01-22T22:27:20.425Z</createdDate_dt>
+	<lastModifiedDate>2018-01-23T17:25:23.462Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-23T17:25:23.462Z</lastModifiedDate_dt>
 </page>

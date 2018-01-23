@@ -7,7 +7,7 @@
   <#list listVideos as video>
     <div class="grid">
       <h3>${video.src.queryValue('title')}</h3>
-          <video id ="vid-carousel-${video.src.queryValue('folder-name')}" class="video-carousel" preload="metadata">
+          <video id ="vid-carousel-${video.src.queryValue('folder-name')}" class="video-carousel" preload="auto">
             	<source src="${video.src.queryValue('video')}" type="video/mp4">
             	<p>Your browser does not support H.264/MP4.</p>
           </video>

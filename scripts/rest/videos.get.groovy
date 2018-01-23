@@ -14,8 +14,9 @@ if(categoryPath == 'undefined') {
   recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'"'
 }
 
+return videosHelper2.getVideoListV2(recentVideosStatement)
 
-println recentVideosStatement
-return videosHelper2.getVideoList(recentVideosStatement)
+
+
 
 

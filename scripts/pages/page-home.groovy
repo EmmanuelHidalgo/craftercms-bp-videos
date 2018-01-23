@@ -10,3 +10,5 @@ def recentVideosStatement = 'content-type:"/page/page-video"';
 templateModel.featuredVideos = videosHelper.getVideoList(carouselVideosStatement)
 
 templateModel.recentVideos = videosHelper.getVideoList(recentVideosStatement)
+
+//println videosHelper.getVideoListV2(recentVideosStatement)

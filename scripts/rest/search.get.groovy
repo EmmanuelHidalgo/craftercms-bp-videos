@@ -12,5 +12,4 @@ if(search == '') {
 	recentVideosStatement = 'content-type:"/page/page-video" AND title: *'+ search +'*'
 	}
 
-println search
-return videosHelper2.getVideoList(recentVideosStatement)
+return videosHelper2.getVideoListV2(recentVideosStatement)

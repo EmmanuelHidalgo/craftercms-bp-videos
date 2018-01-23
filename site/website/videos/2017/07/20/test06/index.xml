@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>1aca</objectGroupId>
+	<objectId>1aca60cd-f4cd-5712-5676-dc3db96c4ec9</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test06</folder-name>
+	<internal-name>test06</internal-name>
+	<title>test06</title>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>test06</description>
+	<video>/static-assets/videos/big_buck_bunny.mp4</video>
+	<categories>	<item>	<key>/site/website/categories/technology/index.xml</key>
+	<value>Technology</value>
+	<include>/site/website/categories/technology/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/website/categories/music/index.xml</key>
+	<value>music</value>
+	<include>/site/website/categories/music/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<createdDate>2018-01-22T22:30:30.445Z</createdDate>
+	<createdDate_dt>2018-01-22T22:30:30.445Z</createdDate_dt>
+	<lastModifiedDate>2018-01-23T17:25:51.902Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-23T17:25:51.902Z</lastModifiedDate_dt>
+	<tags>	<item>	<tagName>test06</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>testTag06</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+</page>
