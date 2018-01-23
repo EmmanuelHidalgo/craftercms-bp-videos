@@ -9,7 +9,21 @@
 	<folder-name/>
 	<createdDate>2017-7-17T20:19:30.000Z</createdDate>
 	<createdDate_dt>2017-7-17T20:19:30.000Z</createdDate_dt>
-	<lastModifiedDate>2018-01-22T23:31:09.891Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-22T23:31:09.891Z</lastModifiedDate_dt>
-	<showCopyright>false</showCopyright>
+	<lastModifiedDate>2018-01-23T23:35:14.446Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-23T23:35:14.446Z</lastModifiedDate_dt>
+	<showCopyright>true</showCopyright>
+	<socialTitle>Social Media!!!</socialTitle>
+	<socialOptions>	<item>	<show>true</show>
+	<url>#</url>
+	<socialSite>fa-facebook</socialSite>
+	<displayName>Facebook</displayName>
+	</item>	<item>	<show>true</show>
+	<url>#</url>
+	<socialSite>fa-youtube</socialSite>
+	<displayName>YouTube</displayName>
+	</item>	<item>	<show>true</show>
+	<url>#</url>
+	<socialSite>fa-google-plus</socialSite>
+	<displayName>G+</displayName>
+	</item></socialOptions>
 </component>

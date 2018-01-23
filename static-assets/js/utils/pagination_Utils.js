@@ -38,8 +38,11 @@ function shouldContinue(direction, pageNumber){
     }
     const firstElement = pages[0]
     const firstPageNumber = firstElement.id.split('-')[2]
-    return pageNumber < firstPageNumber ? false : true
+
+    return pageNumber < firstPageNumber ? true : false
 }
+
+
 
 function go(direction){
 	const previousElement = $('.current')
@@ -47,6 +50,8 @@ function go(direction){
     	const previousPageNumber = parseInt(this.id.split('-')[2])
         const nextPageNumber = direction === 'next' ? previousPageNumber + 1 : previousPageNumber - 1
         const nextPageElement = $("#page-number-"+nextPageNumber)
+        
+        if(shouldContinue(direction, nextPageNumber)) return
         
         if(!nextPageElement) return
 
@@ -74,14 +79,7 @@ function navigate(page) {
 }
 
 
-/*
-This code is the one in charge of all pagination connections to the dom,
-the functions navigate, go, goLast, goNext can be found in
-pagination_Utils.js inside Utils folder
-*/
-function handlePagination(){
-  //$("#page-number-1").addClass('current')
-  
+function handlePagination(){  
   $('.pagination-page').on('click', function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -113,7 +111,7 @@ function generatePagination(pageNumbers, selectedPage) {
   const container = $("#paginationContainer")
   container.empty();
   const pages = []
-  for (let i = 1; i<=pageNumbers; i++ ) {
+  for (let i = 1; i <= pageNumbers; i++ ) {
   	const current = i === selectedPage ? 'current' : ''
   	const element = `<li><a id="page-number-${i}" class="pagination-page ${current}">${i}</a></li>`
     pages.push(element)
