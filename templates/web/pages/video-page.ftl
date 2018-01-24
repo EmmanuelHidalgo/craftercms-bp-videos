@@ -9,11 +9,6 @@
             <div class="search-left">
                 <p>Latest Video Form VideosTube</p>
             </div>
-            <div class="search-right">
-                <form>
-                    <input type="text"><input type="submit" value="" />
-                </form>
-            </div>
             <div class="clear"> </div>
         </div>
         <div class="title">

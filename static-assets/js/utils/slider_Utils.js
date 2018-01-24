@@ -20,8 +20,17 @@ function getSliderConfig() {
           {
             breakpoint: 720,
             settings: {
+              arrows: false,
               slidesToShow: 2,
               slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
             }
           },
           {

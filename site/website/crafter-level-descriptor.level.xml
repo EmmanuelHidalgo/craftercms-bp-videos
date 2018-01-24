@@ -8,8 +8,8 @@
 	<folder-name/>
 	<createdDate>2017-7-17T19:50:55.000Z</createdDate>
 	<createdDate_dt>2017-7-17T19:50:55.000Z</createdDate_dt>
-	<lastModifiedDate>2017-7-17T19:50:55.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-7-17T19:50:55.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-24T21:56:33.821Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-24T21:56:33.821Z</lastModifiedDate_dt>
 	<defaultHeader>	<item>	<key>/site/components/common/default-header.xml</key>
 	<value>Default Header</value>
 	<include>/site/components/common/default-header.xml</include>
@@ -25,4 +25,15 @@
 	<contactEmails>	<item>	<email>emmanuel.hidalgo@rivetlogic.com</email>
 	</item>	<item>	<email>emmanuel_1693@hotmail.es</email>
 	</item></contactEmails>
+	<shareinsocialnetworks>	<item>	<key>googleplus</key>
+	<value_smv>Google Plus</value_smv>
+	</item>	<item>	<key>facebook</key>
+	<value_smv>Facebook</value_smv>
+	</item>	<item>	<key>twitter</key>
+	<value_smv>Twitter</value_smv>
+	</item>	<item>	<key>linkedin</key>
+	<value_smv>LinkedIn</value_smv>
+	</item>	<item>	<key>email</key>
+	<value_smv>Email</value_smv>
+	</item></shareinsocialnetworks>
 </component>

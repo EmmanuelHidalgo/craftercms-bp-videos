@@ -312,6 +312,39 @@
 						</constraint>
 					</constraints>
 				</field>
+				<field>
+					<type>checkbox-group</type>
+					<id>shareinsocialnetworks</id>
+					<iceId></iceId>
+					<title>Share in social networks</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>datasource</name>
+							<value>socialNetworkDS</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>selectAll</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>minSize</name>
+							<value><![CDATA[]]></value>
+							<type>int</type>
+						</constraint>
+					</constraints>
+				</field>
 			</fields>
 		</section>
 	</sections>
@@ -357,6 +390,29 @@
 						<property>
 							<name>type</name>
 							<value>/component/component-footer</value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>key-value-list</type>
+					<id>socialNetworkDS</id>
+					<title>Social Network DS</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>options</name>
+							<value>[{&quot;key&quot;:&quot;googleplus&quot;,&quot;value&quot;:&quot;Google Plus&quot;},{&quot;key&quot;:&quot;facebook&quot;,&quot;value&quot;:&quot;Facebook&quot;},{&quot;key&quot;:&quot;twitter&quot;,&quot;value&quot;:&quot;Twitter&quot;},{&quot;key&quot;:&quot;linkedin&quot;,&quot;value&quot;:&quot;LinkedIn&quot;},{&quot;key&quot;:&quot;email&quot;,&quot;value&quot;:&quot;Email&quot;},{&quot;key&quot;:&quot;whatsapp&quot;,&quot;value&quot;:&quot;Whatsapp&quot;},{&quot;key&quot;:&quot;messenger&quot;,&quot;value&quot;:&quot;Messenger&quot;}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>showkeys</name>
+							<value></value>
 								<type>undefined</type>
 						</property>
 					</properties>

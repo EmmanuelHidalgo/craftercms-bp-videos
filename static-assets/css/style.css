@@ -1031,6 +1031,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		height: 100%;
 		padding-bottom: 12%;
 	}
+	.slick-dots {
+		bottom: 5% !important;
+	}
 }
 @media screen and (max-width:768px) {
 	.left-content {
@@ -1048,6 +1051,14 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 
 	.recent-videos {
 		width:100%;
+	}
+
+	.video-inner{
+		width: 100%;
+	}
+
+	.video-inner video{
+		width: inherit;
 	}
 
 }
@@ -1092,6 +1103,14 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.box1 {
 		width: 30%;
 		margin: 0 3% 6% 0;
+	}
+}
+@media screen and (max-width:479px) {
+	.slick-slider {
+		margin-bottom: 20% !important;
+	}
+	.slick-dots {
+		bottom: -25% !important;
 	}
 }
 @media screen and (max-width:414px) {
@@ -1166,5 +1185,8 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.contact-form {
 		padding-bottom: 0px;
+	}
+	.slick-dots {
+		bottom: -14% !important;
 	}
 }

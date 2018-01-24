@@ -42,7 +42,7 @@ $(document).ready(function() {
         showCount: false,
         showLabel: false,
         shareIn: "popup",
-        shares: ["facebook", "twitter", "googleplus"],
+        shares: socialMedia,
         url: videoUrl
     });
   
