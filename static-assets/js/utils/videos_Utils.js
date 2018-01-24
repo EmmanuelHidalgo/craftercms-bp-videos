@@ -104,7 +104,7 @@ function generateGridVideos(data){
                     </ul>
                 </div>
                 <div class="video-watch">
-                    <a href="${generateVideoUrl(video.src.storeUrl)}">Watch Now</a>
+                    <a href="${generateVideoUrl(video.src.storeUrl)}" class="share-anchor">Watch Now</a>
                 </div>
                 <div class="clear"></div>
                 <div class="lables">

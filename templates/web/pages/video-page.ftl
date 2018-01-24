@@ -31,15 +31,7 @@
         </div>
         <div class="viwes">
             <div class="view-links">
-                <ul>
-                    <li><h4>Share on:</h4></li>
-                    <li><a href="#"><img src="/static-assets/images/f1.png" title="facebook" /></a></li>
-                    <li><a href="#"><img src="/static-assets/images/t1.png" title="Twitter" /></a></li>
-                    <li><a href="#"><img src="/static-assets/images/s1.png" title="Google+" /></a></li>
-                </ul>
-            </div>
-            <div class="views-count">
-                <p><span>2,500</span> Views</p>
+                <div id="share"></div>
             </div>
             <div class="clear"> </div>
         </div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-about</content-type>	<display-template>/templates/web/pages/about-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>a319</objectGroupId>
+	<objectId>a31918e7-561e-2a1e-fc07-3aea32921525</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>about</folder-name>
+	<internal-name>about</internal-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2018-01-24T16:56:28.132Z</createdDate>
+	<createdDate_dt>2018-01-24T16:56:28.132Z</createdDate_dt>
+	<lastModifiedDate>2018-01-24T17:37:46.970Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-24T17:37:46.970Z</lastModifiedDate_dt>
+	<mainInformation>&lt;div class="title-underline"&gt;
+&lt;h2 class="head1" style="text-align: left;"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id="dnn_ctr493_ContentPane" class="cont"&gt;
+&lt;div id="dnn_ctr493_ModuleContent" class="DNNModuleContent ModDNNHTMLC"&gt;
+&lt;div id="dnn_ctr493_HtmlModule_lblContent" class="Normal"&gt;
+&lt;p style="text-align: left;"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing and typesetting industry&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the .&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</mainInformation>
+	<mainInformationTitle>About Our Site</mainInformationTitle>
+	<image>/static-assets/images/g1.jpg</image>
+	<imageTitle>Just Keep Watching!!!!!</imageTitle>
+</page>

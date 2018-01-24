@@ -19,6 +19,12 @@ $(document).ready(function() {
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
   requestVideos(0)
   
+  window.onclick = function (e) {
+    if (e.target.className == 'share-anchor') {
+        videoUrl = e.target.href
+    }
+  }
+  
   /*
     This code handles the search service for the videos
   */
@@ -28,6 +34,17 @@ $(document).ready(function() {
     searchVideos(0, inputText)
   })
   
+   /*
+    This code handles the sosial sharing for the videos
+  */
+  
+   $("#share").jsSocials({
+        showCount: false,
+        showLabel: false,
+        shareIn: "popup",
+        shares: ["facebook", "twitter", "googleplus"],
+        url: videoUrl
+    });
   
   /*
     This code is the one in charge of load the slider (carousel) into the dom

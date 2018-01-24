@@ -17,6 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<meta name="keywords" content="Videostube iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/static-assets/css/fontAwesome.css">
+        <link rel="stylesheet" href="/static-assets/css/jssocials.css">
+        <link rel="stylesheet" href="/static-assets/css/socialthemes/jssocials-theme-flat.css">
         <link rel="stylesheet" href="/static-assets/css/alertify.min.css">
         <link rel="stylesheet" href="/static-assets/css/jstree/style.css" />
         <link rel="stylesheet" href="/static-assets/css/slick/slick.css"/>
@@ -49,6 +51,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script>window.jQuery || document.write('<script src="/static-assets/js/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="/static-assets/js/alertify.min.js"></script>
     <script src="/static-assets/js/jstree.min.js"></script>
+    <script src="/static-assets/js/jssocials.min.js"></script>
     <!----Main-App Utils---->
     <script src="/static-assets/js/utils/state_Utils.js"></script>
     <script src="/static-assets/js/utils/mail_Utils.js"></script>

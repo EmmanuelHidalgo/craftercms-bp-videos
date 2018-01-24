@@ -12,7 +12,7 @@
     <div class="top-nav">
         <ul>
             <li><a href="/index.html">Home</a><p>My Forntpage</p></li>
-            <li><a href="#">About</a><p>About this blog</p></li>
+            <li><a href="/about">About</a><p>About this blog</p></li>
             <li><a href="/categories">Categories</a><p>Be Ur Self</p></li>
             <li><a href="/contact">Contact</a><p>Leave Messages</p></li>
         </ul>

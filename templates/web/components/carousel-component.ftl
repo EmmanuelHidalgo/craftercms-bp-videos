@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="video-watch">
-          <a href="${utils.renderURL(video.src.storeUrl)}">Watch Now</a>
+          <a href="${utils.renderURL(video.src.storeUrl)}" class="share-anchor">Watch Now</a>
         </div>
         <div class="clear"> </div>
         
