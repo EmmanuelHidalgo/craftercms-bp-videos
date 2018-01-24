@@ -65,7 +65,7 @@ function timeLabelHandler(videoClass){
 }
 
 function generateTags(tags) {
-    if(!tags) return `There are no tags fo this video`
+    if(!tags || tags && tags.length === 0) return `There are no tags fo this video`
   
     return tags.map((tag) => { 
         if(!tag.name && !tag.tagName) return

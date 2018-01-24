@@ -9,9 +9,7 @@
 				<div class="col span_1_of_3">
 					<div class="contact_info">
 			    	 	<h3>${contentModel.imageTitle}</h3>
-			    	 		<div class="map">
-								<img src="${contentModel.image}"></img>
-					   		</div>
+							<img src="${contentModel.image}"></img>
       				</div>
 				</div>				
 				<div class="col span_2_of_3">

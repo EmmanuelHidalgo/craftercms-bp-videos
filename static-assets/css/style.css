@@ -992,9 +992,25 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		padding:0px 3px;
 	}
 }
+@media screen and (max-width:1089px) {
+	.grid {
+		width: 44.24%;
+	}
+
+	.left-content .grid {
+		width: 22.9%;
+        margin: 1px;
+	}
+}
+
 @media screen and (max-width:991px) {
 	.grid {
-		width: 28.24%;
+		width: 44.24%;
+	}
+
+	.left-content .grid {
+		width: 30%;
+        margin: 1px;
 	}
 }
 @media screen and (max-width:800px) {
@@ -1002,12 +1018,18 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 101px;
 	}
 	.grid {
-		width: 28%;
+		width: 43%;
 	}
     
     .left-content .grid {
 		width: 46%;
         margin: 1px;
+	}
+
+	.grid video {
+		width:100%;
+		height: 100%;
+		padding-bottom: 12%;
 	}
 }
 @media screen and (max-width:768px) {
@@ -1020,6 +1042,14 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 50%;
 		margin-top: 2em;
 	}
+	.content-sidebar {
+		width: 100%;
+	}
+
+	.recent-videos {
+		width:100%;
+	}
+
 }
 @media screen and (max-width:667px) {
 	.logo {
@@ -1034,7 +1064,11 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 100%;
 	}
 	.recent-videos .grid {
-		width: 44%;
+		width: 96%;
+	}
+
+	.recent-videos .grid video {
+		height: 100%;
 	}
 	.content-sidebar {
 		float:none;
@@ -1045,12 +1079,15 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		margin: 0 3% 0 0;
 	}
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:489px) {
 	.logo {
 		width: 23%;
 	}
 	.grid {
 		width: 44%;
+	}
+	.left-content .grid {
+		width: 95% !important;
 	}
 	.box1 {
 		width: 30%;
