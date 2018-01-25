@@ -18,7 +18,28 @@ $(document).ready(function() {
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
   requestVideos(0)
+  const p = new Promise((resolve) => {
+  	setTimeout(()=> {
+    	const tags = document.getElementsByClassName('generic-tag')
+        if (tags.length > 0){
+            console.log('se va a resolver')
+            resolve()
+        }
+    },0)
+  })
+  p.then(()=> {
+  	$('.generic-tag').on('click', function(){
+    	searchVideos(0, this.text)
+    })
+  })
   
+  
+  
+  /*
+    This code is the one in charge to load the
+    video url into a global variable in order to use it when 
+    I want to share a video
+  */
   window.onclick = function (e) {
     if (e.target.className == 'share-anchor') {
         videoUrl = e.target.href

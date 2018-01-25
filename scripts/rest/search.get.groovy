@@ -9,7 +9,7 @@ def videosHelper = new VideosHelper(searchService, siteItemService, start);
 if(search == '') {
 	recentVideosStatement = 'content-type:"/page/page-video"'
 } else {
-	recentVideosStatement = 'content-type:"/page/page-video" AND title: *'+ search +'*'
+	recentVideosStatement = 'content-type:"/page/page-video" AND (title: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
 	}
 
 return videosHelper.getVideoList(recentVideosStatement)

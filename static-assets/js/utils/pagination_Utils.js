@@ -111,20 +111,17 @@ function generatePagination(pageNumbers, selectedPage) {
   const container = $("#paginationContainer")
   container.empty();
   const pages = []
+ 
   for (let i = 1; i <= pageNumbers; i++ ) {
   	const current = i === selectedPage ? 'current' : ''
-  	const element = `<li><a id="page-number-${i}" class="pagination-page ${current}">${i}</a></li>`
-    pages.push(element)
+    pages.push({index: i, current: current})
   }
-  
+    
+  const source   = document.getElementById("pagination-table-template").innerHTML;
+  const template = Handlebars.compile(source);
+  const context = {pages};
+  const html    = template(context);
 
-  const pagination = `
-  	<li><a id="first-btn" href="#" class="first">First</a></li>
-    <li><a id="previous-btn" href="#" class="previous">Previous</a></li>
-    ${pages}
-    <li><a id="next-btn" href="#" class="next">Next</a></li>
-    <li><a id="last-btn" href="#" class="last">Last</a></li>
-  `
-  container.append(pagination)
+  container.append(html)
 }
 

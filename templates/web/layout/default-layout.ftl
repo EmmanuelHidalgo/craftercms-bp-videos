@@ -53,6 +53,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="/static-assets/js/alertify.min.js"></script>
     <script src="/static-assets/js/jstree.min.js"></script>
     <script src="/static-assets/js/jssocials.min.js"></script>
+    <script src="/static-assets/js/handlebars-v4.0.11.js"></script>
     <!----Main-App Utils---->
     <script src="/static-assets/js/utils/state_Utils.js"></script>
     <script src="/static-assets/js/utils/mail_Utils.js"></script>

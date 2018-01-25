@@ -21,7 +21,7 @@
           		<span></span>
           </div>
        	  <div class="watch" class="time-video-carousel">
-                <a href="${utils.renderURL(video.src.storeUrl)}" class="fa fa-info-circle"></a>
+                <a href="${utils.renderURL(video.src.storeUrl)}" class="fa fa-info-circle share-anchor"></a>
           </div>
       <div class="time">
         <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>

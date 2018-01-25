@@ -64,13 +64,14 @@ function timeLabelHandler(videoClass){
     })
 }
 
+
 function generateTags(tags) {
-    if(!tags || tags && tags.length === 0) return `There are no tags fo this video`
+    if(!tags || tags && tags.length === 0) return ["There are no tags"]
   
     return tags.map((tag) => { 
-        if(!tag.name && !tag.tagName) return
+        if(!tag.tagName) return
         
-        return `<a href="${tag.tagUrl}">${tag.tagName}</a>`
+        return tag.tagName
     })
 }
 
@@ -82,38 +83,39 @@ function generateGridVideos(data){
     const container = $("#gridContainer")
     container.empty();
     const videos = data.responseVideos.map((video)=> {
-        return `
-         <div class = "grid">
-            <h3>${video.src.dom.page.title}</h3>
-            <video id="vid-table-${video.src.dom.page["folder-name"]}" class="video-table" preload="auto">
-                <source src="${video.src.dom.page.video}" type="video/mp4">
-                <p>Your browser does not support H.264/mp4</p>
-            </video>
-            <div class="table-player-container" id="player-table-${video.src.dom.page["folder-name"]}">
-                <span><span>
-            </div>
-            <div class="watch" class="time-video-table">
-                <a href="${generateVideoUrl(video.src.storeUrl)}" class="fa fa-info-circle"></a>
-            </div>
-            <div class="time" class="time-video-table">
-                <span id="span-table-${video.src.dom.page["folder-name"]}">Loading...</span>
-            </div>
-            <div class="grid-info">
-                <div class="clear"></div>
-                <div class="lables">
-                    <p>Tags:
-                        ${generateTags(video.tags)}
-                    </p>
-                </div>
-            </div>
-         </div>
-        `
+    	video.videoUrl = generateVideoUrl(video.src.storeUrl)
+        video.tags = generateTags(video.tags)
+    	const source   = document.getElementById("video-table-template").innerHTML;
+        const template = Handlebars.compile(source);
+        const context = video;
+		const html    = template(context);
+        return html
     })
     container.append(videos)
     $(".video-table").on("durationchange", ()=> {
       const tablePlayer = videoHandler('.table-player-container');
       const tableVideos = timeLabelHandler('.video-table');
     })
+}
+
+function searchVideos(start, videoText) {
+    $.get("/api/1/services/search.json?start="+start+"&searchValue="+videoText)
+      .done((data)=> {
+           if(data) {
+            const p = new Promise((resolve)=> {
+              generateGridVideos(data)        
+              resolve('success')
+           })
+           p.then(()=>{
+               $("#gridContainer").css("display","block");
+                generatePagination((data.totalCount/10) + 1, data.selectedPage)
+                handlePagination()
+           })
+          }   
+        })
+      .fail((error)=> {
+          console.log(error)   
+        });
 }
 
 function requestVideos(start, categoryPath) {
@@ -136,23 +138,4 @@ function requestVideos(start, categoryPath) {
         });
 }
 
-function searchVideos(start, videoText) {
-    $.get("/api/1/services/search.json?start="+start+"&searchValue="+videoText)
-      .done((data)=> {
-           if(data) {
-            const p = new Promise((resolve)=> {
-              generateGridVideos(data)        
-              resolve('success')
-           })
-           p.then(()=>{
-               $("#gridContainer").css("display","block");
-                generatePagination((data.totalCount/10) + 1, data.selectedPage)
-                handlePagination()
-           })
-          }   
-        })
-      .fail((error)=> {
-          console.log(error)   
-        });
-}
 

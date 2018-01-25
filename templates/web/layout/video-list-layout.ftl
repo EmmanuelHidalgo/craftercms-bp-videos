@@ -24,4 +24,44 @@
         <ul id = "paginationContainer"class="dc_pagination dc_paginationA dc_paginationA03"></ul>
     <div class="clear"> </div>
     </div>
+    
+    <script id="pagination-table-template" type="text/x-handlebars-template">
+    	<li><a id="first-btn" href="#" class="first">First</a></li>
+        <li><a id="previous-btn" href="#" class="previous">Previous</a></li>
+        {{#each pages}}
+    	  <li><a id="page-number-{{this.index}}" class="pagination-page {{this.current}}">{{this.index}}</a></li>
+  		{{/each}}
+        <li><a id="next-btn" href="#" class="next">Next</a></li>
+        <li><a id="last-btn" href="#" class="last">Last</a></li>
+    </script>
+
+    <script id="video-table-template" type="text/x-handlebars-template">
+    	<div class = "grid">
+            <h3>{{src.dom.page.title}}</h3>
+            <video id="vid-table-{{src.dom.page.folder-name}}" class="video-table" preload="auto">
+                <source src="{{src.dom.page.video}}" type="video/mp4">
+                <p>Your browser does not support H.264/mp4</p>
+            </video>
+            <div class="table-player-container" id="player-table-{{src.dom.page.folder-name}}">
+                <span><span>
+            </div>
+            <div class="watch" class="time-video-table">
+                <a href="{{videoUrl}}" class="fa fa-info-circle share-anchor"></a>
+            </div>
+            <div class="time" class="time-video-table">
+                <span id="span-table-{{src.dom.page.folder-name}}">Loading...</span>
+            </div>
+            <div class="grid-info">
+                <div class="clear"></div>
+                <div class="lables">
+                    <p>Tags:
+                         {{#each tags}}
+    						<a>{{this}}</a>
+  						 {{/each}}
+                    </p>
+                </div>
+            </div>
+         </div>
+    </script>
+  
 </#macro>
