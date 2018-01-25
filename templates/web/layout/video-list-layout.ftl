@@ -56,12 +56,12 @@
                 <div class="lables">
                     <p>Tags:
                          {{#each tags}}
-    						<a>{{this}}</a>
+    						<a class="generic-tag" onClick="searchVideos(0,'{{this}}')">{{this}}</a>
   						 {{/each}}
                     </p>
                 </div>
             </div>
          </div>
     </script>
-  
+
 </#macro>
