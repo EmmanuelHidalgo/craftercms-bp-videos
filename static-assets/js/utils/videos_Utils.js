@@ -92,20 +92,13 @@ function generateGridVideos(data){
             <div class="table-player-container" id="player-table-${video.src.dom.page["folder-name"]}">
                 <span><span>
             </div>
+            <div class="watch" class="time-video-table">
+                <a href="${generateVideoUrl(video.src.storeUrl)}" class="fa fa-info-circle"></a>
+            </div>
             <div class="time" class="time-video-table">
                 <span id="span-table-${video.src.dom.page["folder-name"]}">Loading...</span>
             </div>
             <div class="grid-info">
-                <div class="video-share">
-                    <ul>
-                        <li><a href="#"><img src="/static-assets/images/likes.png" title="links"></a></li>
-                        <li><a href="#"><img src="/static-assets/images/link.png" title="Link"></a></li>
-                        <li><a href="#"><img src="/static-assets/images/views.png" title="Views"></a></li>
-                    </ul>
-                </div>
-                <div class="video-watch">
-                    <a href="${generateVideoUrl(video.src.storeUrl)}" class="share-anchor">Watch Now</a>
-                </div>
                 <div class="clear"></div>
                 <div class="lables">
                     <p>Tags:

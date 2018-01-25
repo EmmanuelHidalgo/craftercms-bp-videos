@@ -3,6 +3,12 @@
 <#import "/templates/web/includes/utils.ftl" as utils/>
 
 <#macro carousel listVideos>
+<div class="searchbar">
+  <div class="search-left">
+    <p>Featured Videos</p>
+  </div>
+  <div class="clear"> </div>
+</div>
 <div class="slider">
   <#list listVideos as video>
     <div class="grid">
@@ -14,22 +20,14 @@
           <div class="carousel-player-container" id="player-carousel-${video.src.queryValue('folder-name')}">
           		<span></span>
           </div>
+       	  <div class="watch" class="time-video-carousel">
+                <a href="${utils.renderURL(video.src.storeUrl)}" class="fa fa-info-circle"></a>
+          </div>
       <div class="time">
         <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>
       </div>
       <div class="grid-info">
-        <div class="video-share">
-          <ul>
-            <li><a href="#"><img src="/static-assets/images/likes.png" title="links" /></a></li>
-            <li><a href="#"><img src="/static-assets/images/link.png" title="Link" /></a></li>
-            <li><a href="#"><img src="/static-assets/images/views.png" title="Views" /></a></li>
-          </ul>
-        </div>
-        <div class="video-watch">
-          <a href="${utils.renderURL(video.src.storeUrl)}" class="share-anchor">Watch Now</a>
-        </div>
-        <div class="clear"> </div>
-        
+        <div class="clear"> </div>        
         <div class="lables">
           <p>Tags:
           	<#if video.metaData.tags??>

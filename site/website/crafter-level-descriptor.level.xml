@@ -8,8 +8,8 @@
 	<folder-name/>
 	<createdDate>2017-7-17T19:50:55.000Z</createdDate>
 	<createdDate_dt>2017-7-17T19:50:55.000Z</createdDate_dt>
-	<lastModifiedDate>2018-01-24T21:56:33.821Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-24T21:56:33.821Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-25T16:05:32.023Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-25T16:05:32.023Z</lastModifiedDate_dt>
 	<defaultHeader>	<item>	<key>/site/components/common/default-header.xml</key>
 	<value>Default Header</value>
 	<include>/site/components/common/default-header.xml</include>
@@ -20,7 +20,7 @@
 	<include>/site/components/common/default-footer.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></defaultFooter>
-	<recentVideosLabel>Recent Videos</recentVideosLabel>
+	<recentVideosLabel>Videos</recentVideosLabel>
 	<mostViewVideosLabel>Most View Videos</mostViewVideosLabel>
 	<contactEmails>	<item>	<email>emmanuel.hidalgo@rivetlogic.com</email>
 	</item>	<item>	<email>emmanuel_1693@hotmail.es</email>
@@ -35,5 +35,7 @@
 	<value_smv>LinkedIn</value_smv>
 	</item>	<item>	<key>email</key>
 	<value_smv>Email</value_smv>
+	</item>	<item>	<key>whatsapp</key>
+	<value_smv>Whatsapp</value_smv>
 	</item></shareinsocialnetworks>
 </component>
