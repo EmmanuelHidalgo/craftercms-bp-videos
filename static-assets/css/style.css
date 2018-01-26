@@ -79,6 +79,10 @@ body{
     padding-bottom: 12%;
 }
 
+.generic-tag {
+	cursor: pointer;
+}
+
 .no-results {
 	width: 100% !important;
     display: flex !important;

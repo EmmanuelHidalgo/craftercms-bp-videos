@@ -82,7 +82,6 @@ function generateVideoUrl(url){
 function generateGridVideos(data){
     const container = $("#gridContainer")
     container.empty();
-    console.log(data)
     if(data.responseVideos.length === 0) {
     	const content = document.getElementById("no-results-table-template")
         if(!content) return
@@ -155,10 +154,11 @@ function requestVideos(start, categoryPath) {
 }
 
 function categoryRedirect(tagName){
-	window.location.replace("/categories");
     currentSearchVale = tagName
     localStorage.removeItem('jstree');
-    requestVideos(0)
+    localStorage.setItem('tagName', tagName)
+    window.location.replace("/categories");
+    
 }
 
 

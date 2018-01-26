@@ -108,6 +108,9 @@ function handlePagination(){
  }
 
 function generatePagination(pageNumbers, selectedPage) {
+  const noResults = document.getElementsByClassName('no-results')
+  if(noResults.length > 0) return
+
   const container = $("#paginationContainer")
   container.empty();
   const pages = []

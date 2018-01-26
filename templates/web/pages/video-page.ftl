@@ -7,7 +7,7 @@
     <div class="inner-page">
         <div class="searchbar">
             <div class="search-left">
-                <p>Latest Video Form VideosTube</p>
+                <p>${contentModel.title}</p>
             </div>
             <div class="clear"> </div>
         </div>
@@ -15,7 +15,7 @@
             <h3>${model.title}</h3>
             <ul>
                 <li><h4>By:</h4></li>
-                <li><a href="#">Author</a></li>
+                <li><a href="#">${contentModel.author!""}</a></li>
             </ul>
         </div>
         <div class="video-inner">
@@ -33,7 +33,7 @@
         <div class="clear"> </div>
         <div class="video-details">
             <ul>
-                <li><p>Uploaded on <a href="#">${model.createdDate}</a> by <a href="#">Lorem</a></p></li>
+                <li><p>Uploaded on <a href="#">${contentModel.createdDate_dt?datetime?string[contentModel.dateFormat]!""}</a></p></li>
                 <li><span>${model.description}</span></li>
             </ul>
         </div>

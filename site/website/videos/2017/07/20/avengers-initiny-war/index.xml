@@ -10,7 +10,7 @@
 	<title>Avengers Infinity War</title>
 	<placeInNav>false</placeInNav>
 	<orderDefault_f>-1</orderDefault_f>
-	<description>Final chapter of MCU</description>
+	<description>Avengers: Infinity War is an upcoming American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. ... The film was announced in October 2014 as Avengers: Infinity War – Part 1.</description>
 	<video>/static-assets/videos/videoplayback.mp4</video>
 	<categories>	<item>	<key>/site/website/categories/movies/index.xml</key>
 	<value>movies</value>
@@ -37,6 +37,8 @@
 	</item></tags>
 	<createdDate>2018-01-15T21:05:01.524Z</createdDate>
 	<createdDate_dt>2018-01-15T21:05:01.524Z</createdDate_dt>
-	<lastModifiedDate>2018-01-25T18:52:09.762Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-25T18:52:09.762Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-26T22:24:40.735Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-26T22:24:40.735Z</lastModifiedDate_dt>
+	<dateFormat>EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'</dateFormat>
+	<author>Emmanuel</author>
 </page>

@@ -46,7 +46,7 @@
                 <span><span>
             </div>
             <div class="watch" class="time-video-table">
-                <a href="{{videoUrl}}" class="fa fa-info-circle share-anchor"></a>
+                <a href="{{videoUrl}}" class="fa fa-info-circle share-anchor" title="Details"></a>
             </div>
             <div class="time" class="time-video-table">
                 <span id="span-table-{{src.dom.page.folder-name}}">Loading...</span>
@@ -56,7 +56,7 @@
                 <div class="lables">
                     <p>Tags:
                          {{#each tags}}
-    						<a class="generic-tag" onClick="searchVideos(0,'{{this}}', state)">{{this}}</a>
+    						<a class="generic-tag" onClick="searchVideos(0,'{{this}}', state)" title="Go to details for more information">{{this}}</a>
   						 {{/each}}
                     </p>
                 </div>

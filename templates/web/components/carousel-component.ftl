@@ -21,7 +21,7 @@
           		<span></span>
           </div>
        	  <div class="watch" class="time-video-carousel">
-                <a href="${utils.renderURL(video.src.storeUrl)}" class="fa fa-info-circle share-anchor"></a>
+                <a href="${utils.renderURL(video.src.storeUrl)}" class="fa fa-info-circle share-anchor" title="details"></a>
           </div>
       <div class="time">
         <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>
@@ -33,7 +33,7 @@
           	<#if video.metaData.tags??>
                   <#list video.metaData.tags as tag>
                   	<#if tag??>
-                      <a href="${video.metaData.urls[tag?index]}" onClick="searchVideos(0,'${tag}')">${tag}</a>,
+                      <a onClick="searchVideos(0,'${tag}')" title="Go to details for more information">${tag}</a>,
                     </#if>
                   </#list>
                   <#else>

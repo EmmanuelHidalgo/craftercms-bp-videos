@@ -152,6 +152,49 @@
 					</constraints>
 				</field>
 				<field>
+					<type>input</type>
+					<id>author</id>
+					<iceId></iceId>
+					<title>Author</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
 					<type>textarea</type>
 					<id>description</id>
 					<iceId></iceId>
@@ -207,6 +250,39 @@
 							<name>videoManager</name>
 							<value>uploadVideo,selectVideo</value>
 							<type>datasource:video</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>dropdown</type>
+					<id>dateFormat</id>
+					<iceId></iceId>
+					<title>Date Format</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>datasource</name>
+							<value>dateFormatDS</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>emptyvalue</name>
+							<value></value>
+							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -449,6 +525,29 @@
 						</property>
 						<property>
 							<name>type</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>key-value-list</type>
+					<id>dateFormatDS</id>
+					<title>Date Format DS</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>options</name>
+							<value>[{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'&quot;,&quot;value&quot;:&quot;Complete date&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy&quot;,&quot;value&quot;:&quot;mm-dd-yyyy&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a&quot;,&quot;value&quot;:&quot;mm-dd-yy, hh:mm a&quot;},{&quot;key&quot;:&quot;MMMM, yyyy&quot;,&quot;value&quot;:&quot;mm-yyyy&quot;}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>showkeys</name>
 							<value></value>
 								<type>undefined</type>
 						</property>

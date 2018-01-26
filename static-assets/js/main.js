@@ -17,7 +17,14 @@ $(document).ready(function() {
   })
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
-  requestVideos(0)  
+  const tagName = localStorage.getItem('tagName');
+  if(tagName) {
+  	searchVideos(0,tagName)
+    localStorage.removeItem('tagName');
+  }else {
+   requestVideos(0)
+  }
+  
   
   /*
     This code is the one in charge to load the
