@@ -36,6 +36,7 @@ $(document).ready(function() {
   $("#search-form").on('submit', function(e){
   	e.preventDefault()
     const inputText = $('#input-search-text').val()
+    currentSearchVale = inputText
     searchVideos(0, inputText, state)
   })
   

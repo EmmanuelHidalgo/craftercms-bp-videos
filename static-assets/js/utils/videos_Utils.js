@@ -120,7 +120,7 @@ function searchVideos(start, videoText, path) {
 }
 
 function requestVideos(start, categoryPath) {
-    $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath)
+    $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath+"&searchInput="+currentSearchVale)
       .done((data)=> {
            if(data) {
             const p = new Promise((resolve)=> {
