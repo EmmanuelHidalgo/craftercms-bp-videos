@@ -117,7 +117,9 @@ function generatePagination(pageNumbers, selectedPage) {
     pages.push({index: i, current: current})
   }
     
-  const source   = document.getElementById("pagination-table-template").innerHTML;
+  const content =  document.getElementById("pagination-table-template")
+  if(!content) return
+  const source   = content.innerHTML;
   const template = Handlebars.compile(source);
   const context = {pages};
   const html    = template(context);

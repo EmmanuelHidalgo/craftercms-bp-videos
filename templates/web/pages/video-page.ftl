@@ -43,7 +43,7 @@
               <li><h3>Tags:</h3></li>
               <#if contentModel.tags.item??>
                 <#list contentModel.tags.item as tag>
-                    <li><a href="#">${tag.tagName}</a> ,</li>
+                    <li><a onClick="categoryRedirect('${tag.tagName}')">${tag.tagName}</a> ,</li>
                 </#list>
               </#if>
           </ul>

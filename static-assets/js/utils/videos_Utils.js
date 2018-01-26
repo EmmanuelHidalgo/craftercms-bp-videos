@@ -82,10 +82,23 @@ function generateVideoUrl(url){
 function generateGridVideos(data){
     const container = $("#gridContainer")
     container.empty();
+    console.log(data)
+    if(data.responseVideos.length === 0) {
+    	const content = document.getElementById("no-results-table-template")
+        if(!content) return
+        const source   = content.innerHTML;
+        const template = Handlebars.compile(source);
+        const context = {};
+		const html    = template(context);
+    	container.append(html)
+        return
+    }
     const videos = data.responseVideos.map((video)=> {
     	video.videoUrl = generateVideoUrl(video.src.storeUrl)
         video.tags = generateTags(video.tags)
-    	const source   = document.getElementById("video-table-template").innerHTML;
+        const content = document.getElementById("video-table-template")
+        if(!content) return 
+    	const source   = content.innerHTML;
         const template = Handlebars.compile(source);
         const context = video;
 		const html    = template(context);
@@ -99,6 +112,7 @@ function generateGridVideos(data){
 }
 
 function searchVideos(start, videoText, path) {
+	currentSearchVale = videoText
 	const api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
     $.get(api)
       .done((data)=> {
@@ -111,6 +125,7 @@ function searchVideos(start, videoText, path) {
                $("#gridContainer").css("display","block");
                 generatePagination((data.totalCount/10) + 1, data.selectedPage)
                 handlePagination()
+                $('#input-search-text').val(currentSearchVale)
            })
           }   
         })
@@ -137,6 +152,13 @@ function requestVideos(start, categoryPath) {
       .fail((error)=> {
           console.log(error)   
         });
+}
+
+function categoryRedirect(tagName){
+	window.location.replace("/categories");
+    currentSearchVale = tagName
+    localStorage.removeItem('jstree');
+    requestVideos(0)
 }
 
 

@@ -56,11 +56,21 @@
                 <div class="lables">
                     <p>Tags:
                          {{#each tags}}
-    						<a class="generic-tag" onClick="searchVideos(0,'{{this}}')">{{this}}</a>
+    						<a class="generic-tag" onClick="searchVideos(0,'{{this}}', state)">{{this}}</a>
   						 {{/each}}
                     </p>
                 </div>
             </div>
+         </div>
+    </script>
+    
+    <script id="no-results-table-template" type="text/x-handlebars-template">
+    	<div class = "content">
+        	<div class="section group">				
+				<div class="col no-results span_1_of_3">
+			    	 	<h3>No videos found</h3>
+				</div>							
+			  </div>
          </div>
     </script>
 

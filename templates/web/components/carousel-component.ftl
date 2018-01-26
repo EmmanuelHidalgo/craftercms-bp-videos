@@ -33,7 +33,7 @@
           	<#if video.metaData.tags??>
                   <#list video.metaData.tags as tag>
                   	<#if tag??>
-                      <a href="${video.metaData.urls[tag?index]}">${tag}</a>,
+                      <a href="${video.metaData.urls[tag?index]}" onClick="searchVideos(0,'${tag}')">${tag}</a>,
                     </#if>
                   </#list>
                   <#else>

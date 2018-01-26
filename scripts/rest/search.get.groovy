@@ -3,7 +3,6 @@ import scripts.utils.VideosHelper
 def start = params.start
 def search = params.searchValue
 def path = !params.path ? " ": params.path
-println path
 def recentVideosStatement = ''
 
 def videosHelper = new VideosHelper(searchService, siteItemService, start);
