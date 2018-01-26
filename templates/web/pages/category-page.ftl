@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="categories-types">           
-            <@videoList.videoList title= model.recentVideosLabel shouldSearch=false containerClass="recent-videos"/>
+            <@videoList.videoList title= model.recentVideosLabel shouldSearch=true containerClass="recent-videos"/>
         </div>
     </div>
     <div class="clear"> </div>

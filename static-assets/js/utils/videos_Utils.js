@@ -98,8 +98,9 @@ function generateGridVideos(data){
     })
 }
 
-function searchVideos(start, videoText) {
-    $.get("/api/1/services/search.json?start="+start+"&searchValue="+videoText)
+function searchVideos(start, videoText, path) {
+	const api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
+    $.get(api)
       .done((data)=> {
            if(data) {
             const p = new Promise((resolve)=> {
