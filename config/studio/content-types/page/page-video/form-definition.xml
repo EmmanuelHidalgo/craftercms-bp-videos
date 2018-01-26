@@ -543,7 +543,7 @@
 						</property>
 						<property>
 							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'&quot;,&quot;value&quot;:&quot;Complete date&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy&quot;,&quot;value&quot;:&quot;mm-dd-yyyy&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a&quot;,&quot;value&quot;:&quot;mm-dd-yy, hh:mm a&quot;},{&quot;key&quot;:&quot;MMMM, yyyy&quot;,&quot;value&quot;:&quot;mm-yyyy&quot;}]</value>
+							<value>[{&quot;key&quot;:&quot;yyyy-MM-dd&quot;,&quot;value&quot;:&quot;Default&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'&quot;,&quot;value&quot;:&quot;Complete Date&quot;},{&quot;key&quot;:&quot;MMMM dd, yyyy&quot;,&quot;value&quot;:&quot;mm-dd-yyyy&quot;},{&quot;key&quot;:&quot;EEEE, MMMM dd, yyyy, hh:mm a&quot;,&quot;value&quot;:&quot;mm-dd-yy, hh:mm a&quot;},{&quot;key&quot;:&quot;MMMM, yyyy&quot;,&quot;value&quot;:&quot;mm-yyyy&quot;},{&quot;key&quot;:&quot;MM-dd-yyyy&quot;,&quot;value&quot;:&quot;mm-dd-yyy (Numerical)&quot;},{&quot;key&quot;:&quot;MM-dd-yyyy, hh:mm a&quot;,&quot;value&quot;:&quot;mm-dd-yy, hh:mm a (Numerical)&quot;},{&quot;key&quot;:&quot;MM-yyyy&quot;,&quot;value&quot;:&quot;mm-yyyy (Numerical)&quot;}]</value>
 								<type>undefined</type>
 						</property>
 						<property>
