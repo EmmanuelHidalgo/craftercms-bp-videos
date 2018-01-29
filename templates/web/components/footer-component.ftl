@@ -1,7 +1,7 @@
 <#import "/templates/system/common/craftercms-common.ftl" as crafterCommon/>
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 
-<div class="footer">
+<div class="footer" <@studio.iceAttr iceGroup="visible" path=contentModel.storeUrl />>
     <div class="wrap">
         
         <div class="box1">
@@ -9,7 +9,7 @@
                 <ul class="social">
                   <#list contentModel.socialOptions.item as media>
                     <#if media.show == "true">
-                       <li><i class="fa ${media.socialSite}"></i><a href="${media.url}">${media.displayName}</a></li>
+                       <li><i class="fa-custom ${media.socialSite}"></i><a href="${media.url}">${media.displayName}</a></li>
                     </#if>
                 </#list>
                 </ul>

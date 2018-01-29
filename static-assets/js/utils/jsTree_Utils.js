@@ -1,6 +1,6 @@
 function parseData(data) {
 	const dataArr = [];
-    data.item.children.forEach((child) => {
+    data.item.children.forEach(function(child){
         const nodes = child.children ? child.children : [];
         if (child.name !== 'index.xml') {
         dataArr.push({
@@ -20,7 +20,7 @@ function parseData(data) {
 function generateChildren(parentChildren) {
     if(!parentChildren) return ` `;
     const filteredChild = parentChildren.filter((child) => child.name !== 'index.xml');
-    return filteredChild.map((child) => {
+    return filteredChild.map(function(child) {
       return {
           id: child.name,
           text: child.name,

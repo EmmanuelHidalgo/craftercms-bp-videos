@@ -53,7 +53,7 @@
 				<field>
 					<type>input</type>
 					<id>internal-name</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Internal Name</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -68,6 +68,16 @@
 							<name>maxlength</name>
 							<value>50</value>
 							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
@@ -111,7 +121,7 @@
 				<field>
 					<type>input</type>
 					<id>contactFormTitle</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Contact Form Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -141,7 +151,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -154,7 +164,7 @@
 				<field>
 					<type>input</type>
 					<id>contactNameLabel</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Contact Name Label</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -184,7 +194,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -197,7 +207,7 @@
 				<field>
 					<type>input</type>
 					<id>contactEmailLabel</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Contact Email Label</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -227,7 +237,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -240,7 +250,7 @@
 				<field>
 					<type>input</type>
 					<id>contactMobileLabel</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Contact Mobile Label</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -270,7 +280,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -283,7 +293,7 @@
 				<field>
 					<type>input</type>
 					<id>contactSubjectLabel</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Contact Subject Label</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -313,7 +323,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -326,7 +336,7 @@
 				<field>
 					<type>input</type>
 					<id>buttonSubmitTitle</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Button Submit Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -356,7 +366,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -376,7 +386,7 @@
 				<field>
 					<type>input</type>
 					<id>locationTitle</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Location Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -406,7 +416,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -419,7 +429,7 @@
 				<field>
 					<type>input</type>
 					<id>informationTitle</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Information Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -449,7 +459,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -462,7 +472,7 @@
 				<field>
 					<type>input</type>
 					<id>companyMainAddress</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Company Main Address</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -492,7 +502,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -505,7 +515,7 @@
 				<field>
 					<type>input</type>
 					<id>companySecondAddress</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Company Second Address</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -548,7 +558,7 @@
 				<field>
 					<type>input</type>
 					<id>companyPhone</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Company Phone</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -591,7 +601,7 @@
 				<field>
 					<type>input</type>
 					<id>companyFax</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Company Fax</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -634,7 +644,7 @@
 				<field>
 					<type>input</type>
 					<id>companyEmail</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Company Email</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -664,7 +674,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>

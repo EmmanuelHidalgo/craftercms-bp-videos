@@ -11,7 +11,7 @@ $(document).ready(function() {
     the functions videoHandler, timeLabelHandler and requestVideos
     can be found in videos_Utils.js inside Utils folder
   */
-  $(".video-carousel").on("durationchange", ()=> {
+  $(".video-carousel").on("durationchange", function() {
   const tablePlayer = videoHandler('.carousel-player-container');
   const tableVideos = timeLabelHandler('.video-carousel');
   })

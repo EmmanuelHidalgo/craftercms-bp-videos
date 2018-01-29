@@ -15,34 +15,35 @@ function getVideoTime(time) {
 function videoHandler(videoClass){
     return $(videoClass).on('click', function () {
         const formatedId= this.id.split('-').splice(1,this.id.length).join('-');
-        const video = document.getElementById('vid-'+formatedId)        
+        const video = document.getElementById('vid-'+formatedId)  
+        const playerIcon =  document.getElementById('player-'+formatedId)
 
-        video.onseeked = () => {
-          video.controls = true;
-          this.paused = false;
-          this.style.visibility = "hidden";
-        }
-        
-        video.onseeking = () => {
+        video.onseeked = function(){
           video.controls = true;
           video.paused = false;
-          this.style.visibility = "hidden";
+          playerIcon.style.visibility = "hidden";
+        }
+        
+        video.onseeking = function(){
+          video.controls = true;
+          video.paused = false;
+          playerIcon.style.visibility = "hidden";
         }
 
-        video.onplaying = () => {
-          this.style.visibility = "hidden";
+        video.onplaying = function() {
+          playerIcon.style.visibility = "hidden";
           video.paused = false;
         }
         
-        video.onpause = () => {
+        video.onpause = function() {
           video.controls = true;
-          this.style.visibility = "visible";
+          playerIcon.style.visibility = "visible";
         }
         
         if(video.paused) {
             video.play()
             video.controls = true;
-            this.style.visibility = "hidden";
+            playerIcon.style.visibility = "hidden";
         }
     })
 }
@@ -51,7 +52,7 @@ function timeLabelHandler(videoClass){
     const videoCollection = $(videoClass);
     $.each(videoCollection, function() {
         const videoElement = this;
-        setTimeout(()=> {
+        setTimeout(function() {
         if(videoElement.readyState >= 0) {
             const videoTime = getVideoTime(videoElement.duration)
             const formatedId = videoElement.id.split('-').splice(1,videoElement.id.length).join('-')
@@ -68,7 +69,7 @@ function timeLabelHandler(videoClass){
 function generateTags(tags) {
     if(!tags || tags && tags.length === 0) return ["There are no tags"]
   
-    return tags.map((tag) => { 
+    return tags.map(function(tag){ 
         if(!tag.tagName) return
         
         return tag.tagName
@@ -76,7 +77,9 @@ function generateTags(tags) {
 }
 
 function generateVideoUrl(url){
-    return url.split('/').splice(3).filter((item) => item != 'index.xml').join('/')
+    return url.split('/').splice(3).filter(function(item){
+    	return item != 'index.xml'
+    }).join('/')
 }
 
 function generateGridVideos(data){
@@ -92,7 +95,7 @@ function generateGridVideos(data){
     	container.append(html)
         return
     }
-    const videos = data.responseVideos.map((video)=> {
+    const videos = data.responseVideos.map(function(video) {
     	video.videoUrl = generateVideoUrl(video.src.storeUrl)
         video.tags = generateTags(video.tags)
         const content = document.getElementById("video-table-template")
@@ -104,7 +107,7 @@ function generateGridVideos(data){
         return html
     })
     container.append(videos)
-    $(".video-table").on("durationchange", ()=> {
+    $(".video-table").on("durationchange", function() {
       const tablePlayer = videoHandler('.table-player-container');
       const tableVideos = timeLabelHandler('.video-table');
     })
@@ -114,13 +117,13 @@ function searchVideos(start, videoText, path) {
 	currentSearchVale = videoText
 	const api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
     $.get(api)
-      .done((data)=> {
+      .done(function(data) {
            if(data) {
-            const p = new Promise((resolve)=> {
+            const p = new Promise(function(resolve){
               generateGridVideos(data)        
               resolve('success')
            })
-           p.then(()=>{
+           p.then(function() {
                $("#gridContainer").css("display","block");
                 generatePagination((data.totalCount/10) + 1, data.selectedPage)
                 handlePagination()
@@ -128,27 +131,27 @@ function searchVideos(start, videoText, path) {
            })
           }   
         })
-      .fail((error)=> {
+      .fail(function(error) {
           console.log(error)   
         });
 }
 
 function requestVideos(start, categoryPath) {
     $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath+"&searchInput="+currentSearchVale)
-      .done((data)=> {
+      .done(function(data) {
            if(data) {
-            const p = new Promise((resolve)=> {
+            const p = new Promise(function(resolve) {
               generateGridVideos(data)        
               resolve('success')
            })
-           p.then(()=>{
+           p.then(function(){
                $("#gridContainer").css("display","block");
                    generatePagination((data.totalCount/10) + 1, data.selectedPage)
     			   handlePagination()
            })
           }   
         })
-      .fail((error)=> {
+      .fail(function(error) {
           console.log(error)   
         });
 }

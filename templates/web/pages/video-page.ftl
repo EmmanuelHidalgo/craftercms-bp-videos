@@ -3,7 +3,7 @@
 <#import "/templates/system/common/craftercms-common.ftl" as crafterCommon/>
 
 <@layout.default>
-<div class="content">
+<div class="content"  <@studio.iceAttr iceGroup="visible" path=contentModel.storeUrl />>
     <div class="inner-page">
         <div class="searchbar">
             <div class="search-left">

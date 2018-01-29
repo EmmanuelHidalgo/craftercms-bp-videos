@@ -66,6 +66,21 @@ body{
 	font-family: 'Ropa Sans', sans-serif;
 	padding-top: 4px;
 }
+.fa-custom {
+	display: inline-block;
+	color: white !important;
+	opacity: 0.5;
+	margin-right: 10px;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  .fa.icon-yellow {
+    color: #f6cc2f !important;
+    opacity: 1;
+}
 /*----content-----*/
 .grid video {
 	width: 100%;
@@ -378,7 +393,7 @@ body{
 }
 
 .watch a {
-	color: rgb(30, 93, 173);
+	color: rgb(30, 93, 173) !important;
 	opacity: 1;
 	margin-right: 0px;	
 }
