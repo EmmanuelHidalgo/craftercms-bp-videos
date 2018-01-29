@@ -20,7 +20,6 @@
 				   		<p>Phone: ${contentModel.companyPhone}</p>
 				   		<p>Fax: ${contentModel.companyFax}</p>
 				 	 	<p>Email: <span><a href="mailto:${contentModel.companyEmail}">${contentModel.companyEmail}</a></span></p>
-				   		<p>Follow on: <span><a href="#">Facebook</a></span>, <span><a href="#">Twitter</a></span></p>
 				   </div>
 				</div>				
 				<div class="col span_2_of_3">

@@ -81,7 +81,7 @@
 				<field>
 					<type>image-picker</type>
 					<id>headerImage</id>
-					<iceId></iceId>
+					<iceId>visible</iceId>
 					<title>Header Image</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -89,12 +89,12 @@
 					<properties>
 						<property>
 							<name>width</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;180&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>
 							<name>height</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;68&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>

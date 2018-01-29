@@ -371,12 +371,12 @@ body{
 }
 .time{
 	position: absolute;
-	bottom: 32px;
-	right: 7px;
-	color: #fff;
-	background: rgba(85, 85, 85, 0.61);
-	padding: 5px 10px;
-	font-family: 'Ropa Sans', sans-serif;
+    bottom: 63px;
+    right: 7px;
+    color: #fff;
+    background: rgba(85, 85, 85, 0.61);
+    padding: 5px 10px;
+    font-family: 'Ropa Sans', sans-serif;
 }
 
 .watch {
@@ -403,27 +403,31 @@ body{
 }
 
 .recent-videos .grid > .time {
-	bottom: 8px;
+	bottom: 28%;
 }
 
 .recent-videos .watch {
-	bottom: 5px;
+	right: 0%;
+    bottom: 10%;
 }
 
 .left-content .grid > .time {
-	bottom: 6px;
+    bottom: 27.6%;
 }
 
 .left-content .watch {
-	bottom: 2px;
+	bottom: 10%;
+	right: 0%;
 }
 
 .slick-slide .time {
-	bottom: 5px;
+    bottom: 25%;
+    right: 7%;
 }
 
 .slick-slide .watch {
-	bottom: 6px;
+    bottom: 9%;
+    right: 3%;
 }
 
 .grid{
@@ -572,7 +576,6 @@ body{
 	color: rgb(155, 155, 155);
 	font-family: 'Ropa Sans', sans-serif;
 	font-size: 0.9em;
-	text-transform:uppercase;
 }
 .other-links ul li{
 	line-height:1.8em;
@@ -984,10 +987,40 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.wrap{
 		width:90%;
 	}
+	.left-content .grid > .time {
+		bottom: 24.6%;
+		right: 4%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 24%;
+		right: 3%;
+	}
+	.slick-slide .time {
+		bottom: 28%;
+		right: 15%;
+	}
+	.slick-slide .watch {
+		bottom: 9%;
+		right: 12%;
+	}
 }
 @media screen and (max-width:1280px) {
 	.wrap{
 		width:90%;
+	}
+	.left-content .grid > .time {
+		bottom: 25%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+	}
+	.slick-slide .time {
+		bottom: 27%;
+		right: 13%;
+	}
+	.slick-slide .watch {
+		bottom: 9%;
+		right: 10%;
 	}
 }
 @media screen and (max-width:1024px) {
@@ -1000,14 +1033,26 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.grid {
 		width: 29.24%;
 	}
+	.slick-slide .time {
+		bottom: 24%;
+		right: 3%;
+	}
 	.slick-slide .watch {
-		right: 18%;
+		right: 0%;
 	}
 	.left-content .watch {
-		right: 21%;
+		right: 0%;
+	}
+	.left-content .grid > .time {
+		bottom: 28%;
+		right: 3.4%;
 	}
 	.recent-videos .watch {
-		right: 14%;
+		right: 5%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+		right: 8%;
 	}
 }
 @media screen and (max-width:768px) {
@@ -1066,6 +1111,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.view-links ul li img {
 		padding:0px 3px;
 	}
+	.left-content .grid > .time {
+		bottom: 19%;
+	}
 }
 @media screen and (max-width:1089px) {
 	.grid {
@@ -1088,12 +1136,43 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
         margin: 1px;
 	}
 }
+@media screen and (max-width:960px) {
+	.left-content .grid > .time {
+		bottom: 24%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+		right: 5%;
+	}
+	.recent-videos .watch {
+		right: 0%;
+	}
+}
 @media screen and (max-width:854px) {
 	.slick-slide .watch {
 		right: 20%;
 	}
 	.recent-videos .watch {
-		right: 17%;
+		right: 0%;
+	}
+	.left-content .grid > .time {
+		bottom: 26.5%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+		right: 3%;
+	}
+	.slick-slide .time {
+		bottom: 28%;
+		right: 3%;
+	}
+	.slick-slide .watch {
+		right: 0%;
+	}
+}
+@media screen and (max-width:812px) {
+	.left-content .grid > .time {
+		bottom: 27.5%;
 	}
 }
 @media screen and (max-width:800px) {
@@ -1114,14 +1193,27 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		height: 100%;
 		padding-bottom: 12%;
 	}
+	.slick-slide .time {
+		bottom: 25%;
+		right: 3%;
+	}
 	.slick-slide .watch {
-		right: 21%;
+		right: 0;
+	}
+	.left-content .grid > .time {
+		bottom: 23%;
+		right: 2%;
 	}
 	.left-content .watch {
-		right: 15%;
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 27%;
+		right: 3%;
 	}
 	.recent-videos .watch {
-		right: 18%;
+		right: 0%;
+		bottom: 15%;
 	}
 	.slick-dots {
 		bottom: 16% !important;
@@ -1156,11 +1248,37 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.slick-dots {
 		bottom: 21% !important;
 	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+		right: 6%;
+	}
+	.recent-videos .watch {
+		right: 2%;
+		bottom: 11%;
+	}
 
+}
+@media screen and (max-width:736px) {
+	.recent-videos .grid > .time {
+		bottom: 24%;
+		right: 3%;
+	}
 }
 @media screen and (max-width:732px) {
 	.slick-dots {
 		bottom: 4% !important;
+	}
+	.recent-videos .grid > .time {
+		bottom: 24%;
+		right: 3%;
+	}
+	.recent-videos .watch {
+		right: 0%;
+		bottom: 9%;
+	}
+	.slick-slide .time {
+		bottom: 24%;
+		right: 2.4%;
 	}
 }
 @media screen and (max-width:667px) {
@@ -1170,22 +1288,48 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.recent-videos .grid {
 		width: 43%;
 	}
+	.left-content .grid > .time {
+		bottom: 24%;
+	}
 }
 @media screen and (max-width:640px) {
+	.left-content .grid > .time {
+		bottom: 19%;
+		right: 2%;
+	}
 	.left-content .watch {
-		right: 17%;
+		right: 0%;
+		bottom: 7%;
 	}
 	.recent-videos .watch {
-		right: 17%;
+		right: 0%;
+		bottom: 7%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 20%;
+		right: 3%;
 	}
 	.slick-dots {
 		bottom: 7% !important;
+	}
+	.slick-slide .time {
+		bottom: 19%;
+		right: 3%;
+	}
+	.slick-slide .watch {
+		right: 0%;
+		bottom: 4%;
 	}
 }
 
 @media screen and (max-width:600px) {
 	.recent-videos .watch {
-		right: 18%;
+		right: 0%;
+		bottom: 7%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 21%;
+		right: 3%;
 	}
 	.slick-dots {
 		bottom: 11% !important;
@@ -1216,7 +1360,11 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		bottom: 13% !important;
 	}
 	.recent-videos .watch {
-		right: 10%;
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 18.5%;
+		right: 1.5%;
 	}
 }
 @media screen and (max-width:553px) {
@@ -1232,10 +1380,14 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		top: 38%;
 	}
 	.left-content .watch {
-		right: 20%;
+		right: 0%;
 	}
 	.recent-videos .watch {
-		right: 10%;
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 18.8%;
+		right: 1.6%;
 	}
 }
 @media screen and (max-width:489px) {
@@ -1246,13 +1398,17 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 44%;
 	}
 	.slick-slide .watch {
-		right: 22%;
+		right: 0%;
 	}
 	.left-content .grid {
 		width: 95% !important;
 	}
+	.left-content .grid > .time {
+		bottom: 18.5%;
+	}
 	.left-content .watch {
-		right: 12%;
+		right: 0%;
+		bottom: 9%;
 	}
 	.box1 {
 		width: 30%;
@@ -1299,17 +1455,24 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 90%;
 	}
 	.recent-videos .watch {
-		right: 13%;
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 19%;
+		right: 2%;
 	}
     .left-content .grid {
 		width: 90%;
 	}
 	.left-content .watch {
-		right:13%;
+		right:0%;
 	}
-
+	.slick-slide .time {
+		bottom: 18.4%;
+		right: 2%;
+	}
 	.slick-slide .watch {
-		right: 15%;
+		right: 0%;
 	}
 	.slick-dots {
 		bottom: -17% !important;
@@ -1334,16 +1497,27 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width: 47%;
 	}
 	.slick-slide .watch {
-		right: 15%;
+		right: 0%;
+	}
+	.slick-slide .time {
+		bottom: 19%;
+		right: 1.6%;
 	}
 	.slick-dots {
 		bottom: -12% !important;
 	}
+	.left-content .grid > .time {
+		bottom: 19%;
+	}
 	.left-content .watch {
-		right: 14%;
+		right: 0%;
 	}
 	.recent-videos .watch {
-		right: 14%;
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 19%;
+		right: 2%;
 	}
 }
 @media screen and (max-width:375px) {
@@ -1353,16 +1527,31 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 }
 @media screen and (max-width:360px) {
 	.left-content .watch {
-		right: 15%;
+		right: 0%;
+		bottom: 9%
 	}
 	.recent-videos .watch {
-		right: 15%;
+		bottom: 9%;
+		right: 0%;
+	}
+	.slick-slide .time {
+		bottom: 18%;
+		right: 2%;
 	}
 	.slick-slide .watch {
-		right: 15%;
+		right: 0%;
 	}
 	.slick-dots {
 		bottom: -8% !important;
+	}
+
+	.left-content .grid > .time {
+		bottom: 19%;
+		right: 2%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 19%;
+		right: 2%;
 	}
 }
 @media screen and (max-width:320px) {
@@ -1384,5 +1573,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.slick-dots {
 		bottom: -9% !important;
+	}
+	.recent-videos .watch {
+		bottom: 6%;
+		right: 0%;
 	}
 }

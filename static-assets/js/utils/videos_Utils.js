@@ -15,8 +15,10 @@ function getVideoTime(time) {
 function videoHandler(videoClass){
     return $(videoClass).on('click', function () {
         const formatedId= this.id.split('-').splice(1,this.id.length).join('-');
+        console.log(formatedId)
         const video = document.getElementById('vid-'+formatedId)  
         const playerIcon =  document.getElementById('player-'+formatedId)
+        const timeContainer = document.getElementById('time-'+formatedId)
 
         video.onseeked = function(){
           video.controls = true;
@@ -33,6 +35,7 @@ function videoHandler(videoClass){
         video.onplaying = function() {
           playerIcon.style.visibility = "hidden";
           video.paused = false;
+          timeContainer.style.display = "none";
         }
         
         video.onpause = function() {
@@ -157,6 +160,7 @@ function requestVideos(start, categoryPath) {
 }
 
 function categoryRedirect(tagName){
+	console.log(tagName)
     currentSearchVale = tagName
     localStorage.removeItem('jstree');
     localStorage.setItem('tagName', tagName)
