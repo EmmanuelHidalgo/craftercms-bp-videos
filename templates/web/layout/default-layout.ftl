@@ -61,6 +61,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="/static-assets/js/utils/jsTree_Utils.js"></script>
     <script src="/static-assets/js/utils/videos_Utils.js"></script>
     <script src="/static-assets/js/utils/pagination_Utils.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="/static-assets/js/gmaps.min.js"></script>
     <!----Main-App Libraries---->
     <script  src="/static-assets/js/slick.min.js"></script>
     <script src="/static-assets/js/main.js"></script>
@@ -70,6 +72,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
          	socialMedia.push("${social.key}")
         </#list>
 	})();
+    </script>
+    <script>
+      var locationLatitude = ${contentModel.latitude};
+      var locationLongitude = ${contentModel.longitude};
+      var alertMsg = "";
+      if( !(-85<locationLatitude && locationLatitude<85) ){
+        alertMsg += "Invalid latitude. Must be between -85 and 85.\n";
+      }
+      if( !(-180<locationLongitude && locationLongitude<180) ){
+        alertMsg += "Invalid longitude. Must be between -180 and 180.\n";
+      }
+      if( alertMsg ){
+        alert( alertMsg );
+      }
+      
+      var map = new GMaps({
+        el: '.ourmap',
+        lat: locationLatitude,
+        lng: locationLongitude,
+        gestureHandling: 'none',
+        scrollwheel: false,
+        zoom: 15,
+        zoomControl: true,
+        panControl: false,
+        streetViewControl: true,
+        mapTypeControl: false,
+        overviewMapControl: false,
+        clickable: false,
+        styles: [{'stylers': [{'hue': '#000'}, {saturation: -200},
+                              {gamma: 0.50}]}]
+      });
+      map.addMarker({
+        lat: ${contentModel.latitude},
+        lng: ${contentModel.longitude}
+      });
     </script>
     <@studio.toolSupport/>
 	</body>
