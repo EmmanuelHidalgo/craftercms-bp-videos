@@ -37,6 +37,7 @@ body{
 }
 .top-nav{
 	float:right;
+	display: none;
 }
 .top-nav ul li{
 	display: inline-block;
@@ -983,6 +984,64 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 }
 /*----responsive-design----*/
+@media screen and (max-width:1600px) {
+	.slick-slide .time {
+		bottom: 26%;
+		right: 11%;
+	}
+	.slick-slide .watch {
+		right: 8%;
+	}
+	.slick-slide .grid-info {
+		margin-left: 10%;
+	}
+	.slick-slide h3 {
+		margin-left:10%;
+	}
+	.left-content .watch {
+		right: 0%;
+	}
+	.left-content .grid > .time {
+		bottom: 26%;
+		right: 3%;
+	}
+	.recent-videos .watch {
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25%;
+		right: 3%;
+	}
+}
+@media screen and (max-width:1440px) {
+	.slick-slide .time {
+		bottom: 25%;
+		right: 7%;
+	}
+	.slick-slide .watch {
+		right: 4%;
+	}
+	.slick-slide .grid-info {
+		margin-left: 7%;
+	}
+	.slick-slide h3 {
+		margin-left:7%;
+	}
+	.left-content .watch {
+		right: 0%;
+	}
+	.left-content .grid > .time {
+		bottom: 28.1%;
+		right: 3%;
+	}
+	.recent-videos .watch {
+		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 28.1%;
+		right: 3%;
+	}
+}
 @media screen and (max-width:1366px) {
 	.wrap{
 		width:90%;
@@ -1003,6 +1062,26 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		bottom: 9%;
 		right: 12%;
 	}
+	.slick-slide h3 {
+		margin-left: 14%;
+	}
+	.slick-slide .grid-info {
+		margin-left: 14%;
+	}
+}
+@media screen and (max-width:1335px) {
+	.left-content .grid > .time {
+		bottom: 24.6%;
+		right: 3%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 24%;
+		right: 3%;
+	}
+	.slick-slide .time {
+		bottom: 27%;
+		right: 14%;
+	}
 }
 @media screen and (max-width:1280px) {
 	.wrap{
@@ -1022,13 +1101,41 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		bottom: 9%;
 		right: 10%;
 	}
+	.slick-slide h3 {
+		margin-left: 11%;
+	}
+	.slick-slide .grid-info {
+		margin-left: 12%;
+	}
 }
+
+@media screen and (max-width:1175px) {
+	.wrap{
+		width:90%;
+	}
+	.left-content .grid > .time {
+		bottom: 27%;
+		right: 3%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 27%;
+	}
+	.slick-slide .time {
+		bottom: 26%;
+		right: 9%;
+	}
+	.slick-slide .watch {
+		bottom: 9%;
+		right: 6%;
+	}
+}
+
 @media screen and (max-width:1024px) {
 	.wrap{
 		width:90%;
 	}
 	.top-nav ul li:nth-child(4),.top-nav ul li:nth-child(5){
-		display:none;
+		display:block;
 	}
 	.grid {
 		width: 29.24%;
@@ -1036,6 +1143,12 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.slick-slide .time {
 		bottom: 24%;
 		right: 3%;
+	}
+	.slick-slide h3 {
+		margin-left: 1%;
+	}
+	.slick-slide .grid-info {
+		margin-left: 1%;
 	}
 	.slick-slide .watch {
 		right: 0%;
@@ -1053,6 +1166,30 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.recent-videos .grid > .time {
 		bottom: 25%;
 		right: 8%;
+	}
+}
+@media screen and (max-width:1070px) {
+	.wrap{
+		width:90%;
+	}
+	.left-content .grid > .time {
+		bottom: 27.1%;
+		right: 3.5%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 25.1%;
+		right: 9.5%;
+	}
+	.recent-videos .watch {
+		right: 6%;
+	}
+	.slick-slide .time {
+		bottom: 25%;
+		right: 4%;
+	}
+	.slick-slide .watch {
+		bottom: 9%;
+		right: 1%;
 	}
 }
 @media screen and (max-width:768px) {
@@ -1086,7 +1223,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width:95%;
 	}
 	.top-nav ul li:nth-child(2),.lables{
-		display:none;
+		display:block;
 	}
     /*
 	.grid:nth-child(2), .grid:nth-child(5), .grid:nth-child(8) {
@@ -1148,6 +1285,20 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		right: 0%;
 	}
 }
+@media screen and (max-width:910px) {
+	.left-content .grid > .time {
+		bottom: 26%;
+    	right: 3%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 24%;
+		right: 3%;
+	}
+	.slick-slide .time {
+		bottom: 26%;
+		right: 3%;
+	}
+}
 @media screen and (max-width:854px) {
 	.slick-slide .watch {
 		right: 20%;
@@ -1186,6 +1337,10 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
     .left-content .grid {
 		width: 46%;
         margin: 1px;
+	}
+
+	.left-content .grid video {
+		height: 186px;
 	}
 
 	.grid video {
@@ -1291,6 +1446,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.left-content .grid > .time {
 		bottom: 24%;
 	}
+	.left-content .grid video {
+		height: 163px;
+	}
 }
 @media screen and (max-width:640px) {
 	.left-content .grid > .time {
@@ -1300,6 +1458,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.left-content .watch {
 		right: 0%;
 		bottom: 7%;
+	}
+	.left-content .grid video {
+		height: 160px;
 	}
 	.recent-videos .watch {
 		right: 0%;
@@ -1320,6 +1481,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		right: 0%;
 		bottom: 4%;
 	}
+	.slick-slide h3 {
+		margin-left: 0%;
+	}
 }
 
 @media screen and (max-width:600px) {
@@ -1334,6 +1498,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.slick-dots {
 		bottom: 11% !important;
 	}
+	.top-nav {
+		display: none;
+	}
 }
 
 @media screen and (max-width:568px) {
@@ -1346,6 +1513,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 
 	.recent-videos .grid video {
 		height: 100%;
+	}
+	.left-content .grid video {
+		height: 140px;
 	}
 	.content-sidebar {
 		float:none;
@@ -1410,6 +1580,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		right: 0%;
 		bottom: 9%;
 	}
+	.left-content .grid video {
+		height: 100%;
+	}
 	.box1 {
 		width: 30%;
 		margin: 0 3% 6% 0;
@@ -1467,6 +1640,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.left-content .watch {
 		right:0%;
 	}
+	.left-content .grid video {
+		height: 100%;
+	}
 	.slick-slide .time {
 		bottom: 18.4%;
 		right: 2%;
@@ -1509,6 +1685,9 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.left-content .grid > .time {
 		bottom: 19%;
 	}
+	.left-content .grid video {
+		height: 100%;
+	}
 	.left-content .watch {
 		right: 0%;
 	}
@@ -1545,9 +1724,16 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		bottom: -8% !important;
 	}
 
+	.slick-slide h3 {
+		margin-left: 1%;
+	}
+
 	.left-content .grid > .time {
 		bottom: 19%;
 		right: 2%;
+	}
+	.left-content .grid video {
+		height: 100%;
 	}
 	.recent-videos .grid > .time {
 		bottom: 19%;

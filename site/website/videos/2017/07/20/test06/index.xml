@@ -24,11 +24,13 @@
 	<featured>true</featured>
 	<createdDate>2018-01-22T22:30:30.445Z</createdDate>
 	<createdDate_dt>2018-01-22T22:30:30.445Z</createdDate_dt>
-	<lastModifiedDate>2018-01-23T17:25:51.902Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-23T17:25:51.902Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-31T18:57:40.933Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-31T18:57:40.933Z</lastModifiedDate_dt>
 	<tags>	<item>	<tagName>test06</tagName>
 	<tagUrl>#</tagUrl>
 	</item>	<item>	<tagName>testTag06</tagName>
 	<tagUrl>#</tagUrl>
 	</item></tags>
+	<author>Emmanuel</author>
+	<dateFormat>MM-dd-yyyy</dateFormat>
 </page>

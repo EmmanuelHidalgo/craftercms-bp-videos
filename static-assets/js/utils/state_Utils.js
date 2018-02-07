@@ -1,5 +1,5 @@
-let state = ''
-let videoUrl = ''
-let socialMedia = []
-let currentSearchVale = ''
-let getVideosFromVideoPage
+var state = ''
+var videoUrl = ''
+var socialMedia = []
+var currentSearchVale = ''
+var getVideosFromVideoPage

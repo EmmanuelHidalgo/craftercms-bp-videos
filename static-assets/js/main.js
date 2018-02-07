@@ -5,16 +5,16 @@
   the majority of the functions are called from other
   js files that you can find inside Utils folder.
 */
-$(document).ready(function() {
+$(window).load(function() {
   /*
     This code is the one in charge of all video connection to the dom,
     the functions videoHandler, timeLabelHandler and requestVideos
     can be found in videos_Utils.js inside Utils folder
   */
-  $(".video-carousel").on("durationchange", function() {
-  const tablePlayer = videoHandler('.carousel-player-container');
-  const tableVideos = timeLabelHandler('.video-carousel');
-  })
+  	$(".video-carousel").on("durationchange", function() {
+    const tablePlayer = videoHandler('.carousel-player-container');
+    const tableVideos = timeLabelHandler('.video-carousel');
+  	})
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0
   const tagName = localStorage.getItem('tagName');

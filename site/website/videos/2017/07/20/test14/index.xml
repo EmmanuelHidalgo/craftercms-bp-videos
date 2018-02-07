@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-video</content-type>	<display-template>/templates/web/pages/video-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>844c</objectGroupId>
+	<objectId>844c4dc2-3250-543e-accf-66ceb339bffb</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test14</folder-name>
+	<internal-name>test14</internal-name>
+	<title>test14</title>
+	<author>Emmanuel</author>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<description>Test video 14</description>
+	<video>/static-assets/videos/small.mp4</video>
+	<dateFormat>EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'</dateFormat>
+	<categories>	<item>	<key>/site/website/categories/science/index.xml</key>
+	<value>Science</value>
+	<include>/site/website/categories/science/index.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></categories>
+	<featured>true</featured>
+	<tags>	<item>	<tagName>test14</tagName>
+	<tagUrl>#</tagUrl>
+	</item>	<item>	<tagName>test15</tagName>
+	<tagUrl>#</tagUrl>
+	</item></tags>
+	<createdDate>2018-02-01T21:14:26.245Z</createdDate>
+	<createdDate_dt>2018-02-01T21:14:26.245Z</createdDate_dt>
+	<lastModifiedDate>2018-02-06T20:07:11.253Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-06T20:07:11.253Z</lastModifiedDate_dt>
+	<thumbnail>/static-assets/images/background.png</thumbnail>
+</page>

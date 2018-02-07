@@ -38,7 +38,7 @@
     <script id="video-table-template" type="text/x-handlebars-template">
     	<div class = "grid">
             <h3>{{src.dom.page.title}}</h3>
-            <video id="vid-table-{{src.dom.page.folder-name}}" class="video-table" preload="auto">
+            <video id="vid-table-{{src.dom.page.folder-name}}" class="video-table" poster="{{src.dom.page.thumbnail}}" preload="auto">
                 <source src="{{src.dom.page.video}}" type="video/mp4">
                 <p>Your browser does not support H.264/mp4</p>
             </video>
@@ -46,7 +46,7 @@
                 <span><span>
             </div>
             <div class="watch" class="time-video-table">
-                <a href="{{videoUrl}}" class="share-anchor" title="Full video screen">Watch now</a>
+                <a href="{{videoUrl}}" class="share-anchor">Watch now</a>
             </div>
             <div class="time" class="time-video-table" id="time-table-{{src.dom.page.folder-name}}">
                 <span id="span-table-{{src.dom.page.folder-name}}">Loading...</span>
@@ -56,7 +56,7 @@
                 <div class="lables">
                     <p>Tags:
                          {{#each tags}}
-    						<a class="generic-tag" onClick="categoryRedirect('{{this}}')" title="Go to details for more information">{{this}}</a>
+    						<a class="generic-tag" onClick="categoryRedirect('{{this}}')" title="Go to 'Watch now' for more information">{{this}}</a>
   						 {{/each}}
                     </p>
                 </div>

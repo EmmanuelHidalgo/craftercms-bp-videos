@@ -1,5 +1,5 @@
 function removeCurrent() {
-    const pages = $('.pagination-page')
+    var pages = $('.pagination-page')
     $.each(pages, function(){
       $('#'+this.id).removeClass('current')
     })
@@ -18,9 +18,9 @@ function goFirst(){
 
 function goLast(){
 	removeCurrent()
-    const pages = $('.pagination-page')
-    const lastPageId = 'page-number-'+pages.length
-    const start = pages.length == 1 ? 0 : (pages.length*10)-10
+    var pages = $('.pagination-page')
+    var lastPageId = 'page-number-'+pages.length
+    var start = pages.length == 1 ? 0 : (pages.length*10)-10
     $("#"+lastPageId).addClass('current')
     if(state) {
     	requestVideos(start, state)
@@ -30,14 +30,14 @@ function goLast(){
 }
 
 function shouldContinue(direction, pageNumber){
-	const pages = $('.pagination-page')
+	var pages = $('.pagination-page')
     if(direction === "next") {
-    	const lastElement  = pages[pages.length-1]
-        const lastPageNumber = lastElement.id.split('-')[2]
+    	var lastElement  = pages[pages.length-1]
+        var lastPageNumber = lastElement.id.split('-')[2]
         return pageNumber > lastPageNumber ? true : false
     }
-    const firstElement = pages[0]
-    const firstPageNumber = firstElement.id.split('-')[2]
+    var firstElement = pages[0]
+    var firstPageNumber = firstElement.id.split('-')[2]
 
     return pageNumber < firstPageNumber ? true : false
 }
@@ -45,11 +45,11 @@ function shouldContinue(direction, pageNumber){
 
 
 function go(direction){
-	const previousElement = $('.current')
+	var previousElement = $('.current')
     $.each(previousElement, function() {
-    	const previousPageNumber = parseInt(this.id.split('-')[2])
-        const nextPageNumber = direction === 'next' ? previousPageNumber + 1 : previousPageNumber - 1
-        const nextPageElement = $("#page-number-"+nextPageNumber)
+    	var previousPageNumber = parseInt(this.id.split('-')[2])
+        var nextPageNumber = direction === 'next' ? previousPageNumber + 1 : previousPageNumber - 1
+        var nextPageElement = $("#page-number-"+nextPageNumber)
         
         if(shouldContinue(direction, nextPageNumber)) return
         
@@ -57,7 +57,7 @@ function go(direction){
 
         removeCurrent()
         nextPageElement.addClass('current')
-        const start = nextPageNumber == 1 ? 0 : (nextPageNumber*10)-10
+        var start = nextPageNumber == 1 ? 0 : (nextPageNumber*10)-10
         if(state){
       		requestVideos(start, state)
         } else {
@@ -67,8 +67,8 @@ function go(direction){
 }
 
 function navigate(page) {
-    const pageNumber = page.id.split('-')[2]
-    const start = pageNumber == 1 ? 0 : (pageNumber*10)-10
+    var pageNumber = page.id.split('-')[2]
+    var start = pageNumber == 1 ? 0 : (pageNumber*10)-10
     removeCurrent()
     $('#'+page.id).addClass('current')
     if(state){
@@ -108,24 +108,24 @@ function handlePagination(){
  }
 
 function generatePagination(pageNumbers, selectedPage) {
-  const noResults = document.getElementsByClassName('no-results')
+  var noResults = document.getElementsByClassName('no-results')
   if(noResults.length > 0) return
 
-  const container = $("#paginationContainer")
+  var container = $("#paginationContainer")
   container.empty();
-  const pages = []
+  var pages = []
  
-  for (let i = 1; i <= pageNumbers; i++ ) {
-  	const current = i === selectedPage ? 'current' : ''
+  for (var i = 1; i <= pageNumbers; i++ ) {
+  	var current = i === selectedPage ? 'current' : ''
     pages.push({index: i, current: current})
   }
     
-  const content =  document.getElementById("pagination-table-template")
+  var content =  document.getElementById("pagination-table-template")
   if(!content) return
-  const source   = content.innerHTML;
-  const template = Handlebars.compile(source);
-  const context = {pages};
-  const html    = template(context);
+  var source   = content.innerHTML;
+  var template = Handlebars.compile(source);
+  var context = {pages:pages};
+  var html    = template(context);
 
   container.append(html)
 }

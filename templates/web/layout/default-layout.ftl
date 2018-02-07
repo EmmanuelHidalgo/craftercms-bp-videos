@@ -17,6 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<meta name="keywords" content="Videostube iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/static-assets/css/menu.css">
         <link rel="stylesheet" href="/static-assets/css/fontAwesome.css">
         <link rel="stylesheet" href="/static-assets/css/jssocials.css">
         <link rel="stylesheet" href="/static-assets/css/socialthemes/jssocials-theme-flat.css">

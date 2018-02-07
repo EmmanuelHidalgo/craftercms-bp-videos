@@ -13,7 +13,11 @@
   <#list listVideos as video>
     <div class="grid">
       <h3>${video.src.queryValue('title')}</h3>
-          <video id ="vid-carousel-${video.src.queryValue('folder-name')}" class="video-carousel" preload="auto">
+      	<#assign posterImage="">
+      	<#if video.src.queryValue('thumbnail')??>
+        	<#assign posterImage="${video.src.queryValue('thumbnail')}">
+        </#if>
+          <video id ="vid-carousel-${video.src.queryValue('folder-name')}" class="video-carousel" poster="${posterImage}" preload="auto">
             	<source src="${video.src.queryValue('video')}" type="video/mp4">
             	<p>Your browser does not support H.264/MP4.</p>
           </video>
@@ -21,7 +25,7 @@
           		<span></span>
           </div>
        	  <div class="watch" class="time-video-carousel">
-                <a href="${utils.renderURL(video.src.storeUrl)}" title="details">Whatch now</a>
+                <a href="${utils.renderURL(video.src.storeUrl)}">Watch now</a>
           </div>
       <div class="time" id="time-carousel-${video.src.queryValue('folder-name')}">
         <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>
@@ -33,7 +37,7 @@
           	<#if video.metaData.tags??>
                   <#list video.metaData.tags as tag>
                   	<#if tag??>
-                      <a onClick="categoryRedirect('${tag}')" title="Go to details for more information">${tag}</a>,
+                      <a onClick="categoryRedirect('${tag}')" title="Go to 'Watch now' for more information">${tag}</a>,
                     </#if>
                   </#list>
                   <#else>

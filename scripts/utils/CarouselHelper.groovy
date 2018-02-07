@@ -2,8 +2,6 @@ package scripts.utils
 
 import java.util.Properties
 
-
-
 class CarouselHelper {
 
    def searchService
@@ -20,6 +18,7 @@ class CarouselHelper {
 
     
     query.setParam("sort", "createdDate_dt desc")
+    query.setParam("rows", "10")
     def executedQuery = searchService.search(query)
     def start = executedQuery.response.start
     def itemsFound = executedQuery.response.numFound

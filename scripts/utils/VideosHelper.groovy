@@ -14,6 +14,7 @@ class VideosHelper {
     this.start = start
   }
   
+  
   def getVideoList(statement) {
     def query = searchService.createQuery()
     query = query.setQuery(statement)
@@ -33,6 +34,7 @@ class VideosHelper {
         def tagArr = item.get("tags.item.tagName")
         def completeTagsArr = []
         def tagUrl = item.get("tags.item.tagUrl")
+
         if (tagArr){
         for(def i = 0; i<= tagArr.size; i++) {
           def completeTagObj = tagArr[i] ? ["tagName": tagArr[i], "tagUrl": tagUrl[i]] : ["tagName": null, "tagUrl": null]

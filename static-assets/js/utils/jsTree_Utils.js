@@ -1,7 +1,7 @@
 function parseData(data) {
-	const dataArr = [];
+	var dataArr = [];
     data.item.children.forEach(function(child){
-        const nodes = child.children ? child.children : [];
+        var nodes = child.children ? child.children : [];
         if (child.name !== 'index.xml') {
         dataArr.push({
             id: child.name,
@@ -18,8 +18,10 @@ function parseData(data) {
 }
 
 function generateChildren(parentChildren) {
-    if(!parentChildren) return ` `;
-    const filteredChild = parentChildren.filter((child) => child.name !== 'index.xml');
+    if(!parentChildren) return '';
+    var filteredChild = parentChildren.filter(function(childs){
+    	return childs.name !== 'index.xml';
+    });
     return filteredChild.map(function(child) {
       return {
           id: child.name,

@@ -19,7 +19,11 @@
             </ul>
         </div>
         <div class="video-inner">
-            <video controls>
+            <#assign posterImage="">
+            <#if contentModel.thumbnail??>
+                <#assign posterImage="${contentModel.thumbnail}">
+            </#if>
+            <video controls poster="${posterImage}" preload="auto">
             	<source src="${model.video}" type="video/mp4">
             	<p>Your browser does not support H.264/MP4.</p>
             </video>

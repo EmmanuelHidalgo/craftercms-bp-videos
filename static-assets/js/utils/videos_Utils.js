@@ -2,8 +2,8 @@ function getVideoTime(time) {
     if(isNaN(time)){
         return 'Loading...'
     }
-    const minutes = parseInt(time/60, 10);
-    let seconds =  (time % 60).toFixed(0);
+    var minutes = parseInt(time/60, 10);
+    var seconds =  (time % 60).toFixed(0);
     if (seconds == 0) {
       seconds = '00'
     } else if(seconds > 0 && seconds < 10 ) {
@@ -14,11 +14,10 @@ function getVideoTime(time) {
 
 function videoHandler(videoClass){
     return $(videoClass).on('click', function () {
-        const formatedId= this.id.split('-').splice(1,this.id.length).join('-');
-        console.log(formatedId)
-        const video = document.getElementById('vid-'+formatedId)  
-        const playerIcon =  document.getElementById('player-'+formatedId)
-        const timeContainer = document.getElementById('time-'+formatedId)
+        var formatedId= this.id.split('-').splice(1,this.id.length).join('-');
+        var video = document.getElementById('vid-'+formatedId)  
+        var playerIcon =  document.getElementById('player-'+formatedId)
+        var timeContainer = document.getElementById('time-'+formatedId)
 
         video.onseeked = function(){
           video.controls = true;
@@ -52,15 +51,15 @@ function videoHandler(videoClass){
 }
 
 function timeLabelHandler(videoClass){
-    const videoCollection = $(videoClass);
+    var videoCollection = $(videoClass);
     $.each(videoCollection, function() {
-        const videoElement = this;
+        var videoElement = this;
         setTimeout(function() {
         if(videoElement.readyState >= 0) {
-            const videoTime = getVideoTime(videoElement.duration)
-            const formatedId = videoElement.id.split('-').splice(1,videoElement.id.length).join('-')
+            var videoTime = getVideoTime(videoElement.duration)
+            var formatedId = videoElement.id.split('-').splice(1,videoElement.id.length).join('-')
             if (formatedId != '') {
-            const spanElement = document.getElementById('span-'+formatedId)
+            var spanElement = document.getElementById('span-'+formatedId)
             spanElement.innerHTML= videoTime
             }
         }
@@ -86,43 +85,44 @@ function generateVideoUrl(url){
 }
 
 function generateGridVideos(data){
-    const container = $("#gridContainer")
+    var container = $("#gridContainer")
     container.empty();
     if(data.responseVideos.length === 0) {
-    	const content = document.getElementById("no-results-table-template")
+    	var content = document.getElementById("no-results-table-template")
         if(!content) return
-        const source   = content.innerHTML;
-        const template = Handlebars.compile(source);
-        const context = {};
-		const html    = template(context);
+        var source   = content.innerHTML;
+        var template = Handlebars.compile(source);
+        var context = {};
+		var html    = template(context);
     	container.append(html)
         return
     }
     const videos = data.responseVideos.map(function(video) {
     	video.videoUrl = generateVideoUrl(video.src.storeUrl)
         video.tags = generateTags(video.tags)
-        const content = document.getElementById("video-table-template")
+        var content = document.getElementById("video-table-template")
         if(!content) return 
-    	const source   = content.innerHTML;
-        const template = Handlebars.compile(source);
-        const context = video;
-		const html    = template(context);
+    	var source   = content.innerHTML;
+        var template = Handlebars.compile(source);
+        var context = video;
+		var html    = template(context);
         return html
     })
     container.append(videos)
-    $(".video-table").on("durationchange", function() {
-      const tablePlayer = videoHandler('.table-player-container');
-      const tableVideos = timeLabelHandler('.video-table');
+      $(".video-table").on("durationchange", function() {
+      var tablePlayer = videoHandler('.table-player-container');
+      var tableVideos = timeLabelHandler('.video-table');
     })
+    
 }
 
 function searchVideos(start, videoText, path) {
 	currentSearchVale = videoText
-	const api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
+	var api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
     $.get(api)
       .done(function(data) {
            if(data) {
-            const p = new Promise(function(resolve){
+            var p = new Promise(function(resolve){
               generateGridVideos(data)        
               resolve('success')
            })
@@ -143,7 +143,7 @@ function requestVideos(start, categoryPath) {
     $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath+"&searchInput="+currentSearchVale)
       .done(function(data) {
            if(data) {
-            const p = new Promise(function(resolve) {
+            var p = new Promise(function(resolve) {
               generateGridVideos(data)        
               resolve('success')
            })
