@@ -27,8 +27,10 @@
 	</item></tags>
 	<createdDate>2018-01-22T18:46:57.450Z</createdDate>
 	<createdDate_dt>2018-01-22T18:46:57.450Z</createdDate_dt>
-	<lastModifiedDate>2018-01-30T16:31:01.063Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-30T16:31:01.063Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-02-08T17:48:54.899Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-08T17:48:54.899Z</lastModifiedDate_dt>
 	<author>Emmanuel</author>
 	<dateFormat>EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'</dateFormat>
+	<duration>1:00</duration>
+	<thumbnail>/static-assets/images/background.png</thumbnail>
 </page>

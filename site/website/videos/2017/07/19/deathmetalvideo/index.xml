@@ -32,9 +32,11 @@
 	</item></categories>
 	<createdDate>2018-01-10T17:25:04.253Z</createdDate>
 	<createdDate_dt>2018-01-10T17:25:04.253Z</createdDate_dt>
-	<lastModifiedDate>2018-01-26T22:01:24.397Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-26T22:01:24.397Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-02-08T17:42:35.082Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-08T17:42:35.082Z</lastModifiedDate_dt>
 	<featured>true</featured>
 	<author>Test Author </author>
 	<dateFormat>MMMM, yyyy</dateFormat>
+	<duration>1:00</duration>
+	<thumbnail>/static-assets/images/background.png</thumbnail>
 </page>

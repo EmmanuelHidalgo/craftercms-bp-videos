@@ -13,7 +13,7 @@ $(window).load(function() {
   */
   	$(".video-carousel").on("durationchange", function() {
     const tablePlayer = videoHandler('.carousel-player-container');
-    const tableVideos = timeLabelHandler('.video-carousel');
+    //const tableVideos = timeLabelHandler('.video-carousel');
   	})
   
   //loads first 10 videos when the page load for the first time, in this case 0 means start at row number 0

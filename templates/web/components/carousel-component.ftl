@@ -28,7 +28,7 @@
                 <a href="${utils.renderURL(video.src.storeUrl)}">Watch now</a>
           </div>
       <div class="time" id="time-carousel-${video.src.queryValue('folder-name')}">
-        <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">Loading...</span>
+        <span class= "time-video-carousel" id="span-carousel-${video.src.queryValue('folder-name')}">${video.src.queryValue('duration')}</span>
       </div>
       <div class="grid-info">
         <div class="clear"> </div>        

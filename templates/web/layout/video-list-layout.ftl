@@ -49,7 +49,7 @@
                 <a href="{{videoUrl}}" class="share-anchor">Watch now</a>
             </div>
             <div class="time" class="time-video-table" id="time-table-{{src.dom.page.folder-name}}">
-                <span id="span-table-{{src.dom.page.folder-name}}">Loading...</span>
+                <span id="span-table-{{src.dom.page.folder-name}}">{{src.dom.page.duration}}</span>
             </div>
             <div class="grid-info">
                 <div class="clear"></div>

@@ -29,6 +29,10 @@
 	<featured>true</featured>
 	<createdDate>2018-01-12T18:06:06.988Z</createdDate>
 	<createdDate_dt>2018-01-12T18:06:06.988Z</createdDate_dt>
-	<lastModifiedDate>2018-01-12T23:32:54.690Z</lastModifiedDate>
-	<lastModifiedDate_dt>2018-01-12T23:32:54.690Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-02-08T17:47:54.660Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-08T17:47:54.660Z</lastModifiedDate_dt>
+	<author>Emmanuel</author>
+	<duration>1:00</duration>
+	<dateFormat>EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'</dateFormat>
+	<thumbnail>/static-assets/images/background.png</thumbnail>
 </page>
