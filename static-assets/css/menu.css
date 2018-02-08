@@ -21,7 +21,7 @@ nav {
 	align-items: center;
 	list-style-type: none;
 	height: 50%;
-  }
+	}
 
   .menu li {
 	display: inline-block;
@@ -29,12 +29,14 @@ nav {
     width: 150px;
     background: rgb(30, 93, 173);
     color: rgb(218, 216, 216);
-    border-left: 1px solid rgb(47, 75, 124);
+		border-top: 1px solid rgb(47, 75, 124);
+		border-right: 1px solid rgb(47, 75, 124);
     padding: 22px 12px;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 0.9em;
+		font-size: 0.9em;
+		position: relative;
   }
   
   .menu li a {
@@ -44,11 +46,29 @@ nav {
 	font-size: 14px;
 	padding: 10px 15px;
 	transition: background .2s linear;
-  }
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 11px;
+	}
+	
+	.menu p {
+		margin-top: 1em;
+		font-size: 12px;
+	}
   
   @media screen and (max-width: 600px) {
 	.menu li a {
-	  font-size: 13px;
+		font-size: 13px;
+		position: inherit;
+	}
+	.menu p {
+		display: none;
 	}
   }
   
@@ -92,7 +112,8 @@ nav {
 	  align-self: center;
 	  width: 93%;
 	  opacity: 0;
-	  visibility: hidden;
+		visibility: hidden;
+		border-right: none;
 	}
 	.menu li a {
 	  width: 95%;

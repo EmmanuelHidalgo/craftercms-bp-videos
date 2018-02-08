@@ -22,10 +22,10 @@
         <label for="checkbox1">
           <span class="toggle"><div class="hamburger-contaier">☰</div></span>
           <ul class="menu demo">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about">About</a></li>  
-            <li><a href="/categories">Categories</a></li>  
-            <li><a href="/contact">Contact</a></li>  
+            <li><a href="/index.html">Home</a><p>My Forntpage</p></li>
+            <li><a href="/about">About</a><p>About this blog</p></li>  
+            <li><a href="/categories">Categories</a><p>Be Ur Self</p></li>  
+            <li><a href="/contact">Contact</a><p>Leave Messages</p></li>  
           </ul>
         </label>
 	</nav>

@@ -6,6 +6,7 @@ function getSliderConfig() {
         infinite: true,
         arrows: true,
         autoplay: false,
+        swipe: false,
         focusOnSelect: false,
         responsive: [
           {
@@ -23,6 +24,7 @@ function getSliderConfig() {
               arrows: false,
               slidesToShow: 2,
               slidesToScroll: 2,
+              swipe: true,
             }
           },
           {
@@ -31,6 +33,7 @@ function getSliderConfig() {
               arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1,
+              swipe: true,
             }
           },
           {
@@ -39,6 +42,7 @@ function getSliderConfig() {
               arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1,
+              swipe: true,
             }
           }
         ]

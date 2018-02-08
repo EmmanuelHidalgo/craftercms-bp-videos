@@ -34,12 +34,16 @@ function videoHandler(videoClass){
         video.onplaying = function() {
           playerIcon.style.visibility = "hidden";
           video.paused = false;
-          timeContainer.style.display = "none";
-        }
+          if(videoClass === '.carousel-player-container'){
+            timeContainer.style.display = "none";
+            $('.slick-arrow').css({display: 'none'})
+          }
+          }
         
         video.onpause = function() {
           video.controls = true;
           playerIcon.style.visibility = "visible";
+          $('.slick-arrow').css({display: 'block'})
         }
         
         if(video.paused) {
