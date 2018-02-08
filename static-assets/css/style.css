@@ -1279,7 +1279,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 25%;
-		right: 5%;
+		right: 5% !important;
 	}
 	.recent-videos .watch {
 		right: 0%;
@@ -1311,7 +1311,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 25%;
-		right: 3%;
+		right: 3% !important;
 	}
 	.slick-slide .time {
 		bottom: 28%;
@@ -1364,7 +1364,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 27%;
-		right: 3%;
+		right: 3% !important;
 	}
 	.recent-videos .watch {
 		right: 0%;
@@ -1405,7 +1405,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 25%;
-		right: 6%;
+		right: 6% !important;
 	}
 	.recent-videos .watch {
 		right: 2%;
@@ -1416,7 +1416,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 @media screen and (max-width:736px) {
 	.recent-videos .grid > .time {
 		bottom: 24%;
-		right: 3%;
+		right: 4% !important;
 	}
 	.left-content .grid > .time {
 		bottom: 25%;
@@ -1433,7 +1433,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 24%;
-		right: 4%;
+		right: 2.5% !important;
 	}
 	.left-content .grid > .time {
 		bottom: 25%;
@@ -1481,7 +1481,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 26% !important;
-		right: 3%;
+		right: 3% !important;
 	}
 	.slick-dots {
 		bottom: 7% !important;
@@ -1547,7 +1547,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 21.5% !important;
-		right: 1.5%;
+		right: 1.5% !important;
 	}
 }
 @media screen and (max-width:553px) {
@@ -1570,7 +1570,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 18.8%;
-		right: 1.6%;
+		right: 1.6% !important;
 	}
 }
 @media screen and (max-width:489px) {
@@ -1761,7 +1761,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	}
 	.recent-videos .grid > .time {
 		bottom: 23% !important;
-		right: 2%;
+		right: 2% !important;
 	}
 }
 @media screen and (max-width:320px) {
@@ -1787,6 +1787,10 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 	.recent-videos .watch {
 		bottom: 6%;
 		right: 0%;
+	}
+	.recent-videos .grid > .time {
+		bottom: 24% !important;
+		right: 2% !important;
 	}
 	.slick-slide .time {
 		bottom: 24% !important;
