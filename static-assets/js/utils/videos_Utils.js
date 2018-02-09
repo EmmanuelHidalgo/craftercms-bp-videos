@@ -88,8 +88,9 @@ function generateGridVideos(data){
 }
 
 function searchVideos(start, videoText, path) {
+	console.log(path)
 	currentSearchVale = videoText
-	var api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText+"&path="+path
+	var api = "/api/1/services/search.json?start="+start+"&searchValue="+videoText.toLowerCase()+"&path="+path
     $.get(api)
       .done(function(data) {
            if(data) {
@@ -111,6 +112,7 @@ function searchVideos(start, videoText, path) {
 }
 
 function requestVideos(start, categoryPath) {
+	console.log(categoryPath)
     $.get("/api/1/services/videos.json?start="+start+"&category="+categoryPath+"&searchInput="+currentSearchVale)
       .done(function(data) {
            if(data) {

@@ -12,13 +12,13 @@ def recentVideosStatement = ''
 if(categoryPath == 'undefined') {
  recentVideosStatement = 'content-type:"/page/page-video"';
  if(search != 'undefined' || search != '') {
- 	recentVideosStatement = 'content-type:"/page/page-video" AND (title: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
+ 	recentVideosStatement = 'content-type:"/page/page-video" AND (internal-name: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
  }
 } else {
   path = categoryPath+"/index.xml"
   recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'"'
   if(search != 'undefined' || search != "") {
-  recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'" AND (title: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
+  recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ categoryPath +'" AND (internal-name: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
   }
 }
 

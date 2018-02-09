@@ -10,12 +10,13 @@ def videosHelper = new VideosHelper(searchService, siteItemService, start);
 if(search == '') {
 	recentVideosStatement = 'content-type:"/page/page-video"'
 } else if(path == '' || path == 'undefined'){
-	recentVideosStatement = 'content-type:"/page/page-video" AND (title: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
+	recentVideosStatement = 'content-type:"/page/page-video" AND (internal-name: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
 } else {
-	recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'" AND (title: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
+	recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'" AND (internal-name: *'+ search +'* OR tags.item.tagName: *'+search+'*)'
 }
 
 if(search == '' && (path != 'undefined' || path != " ")) {
+	println "entro"
 	recentVideosStatement = 'content-type:"/page/page-video" AND categories.item.key:"'+ path +'"'
 }
 

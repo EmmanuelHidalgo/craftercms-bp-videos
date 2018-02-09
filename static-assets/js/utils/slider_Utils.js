@@ -6,8 +6,10 @@ function getSliderConfig() {
         infinite: true,
         arrows: true,
         autoplay: false,
-        swipe: false,
+        swipe: true,
         focusOnSelect: false,
+        useTransform: false,
+        useCSS: false,
         responsive: [
           {
             breakpoint: 1024,

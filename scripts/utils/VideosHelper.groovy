@@ -16,6 +16,7 @@ class VideosHelper {
   
   
   def getVideoList(statement) {
+  	println statement
     def query = searchService.createQuery()
     query = query.setQuery(statement)
     query.setParam("sort", "createdDate_dt desc")
